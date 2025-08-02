@@ -1,0 +1,5 @@
+---
+arch: "amd64"
+
+etcd_version: "3.6.2"
+k8s_version: "1.33.2"

@@ -1,0 +1,19 @@
+---
+- name: Scan ssh keys for workers and control
+  hosts: gateway
+  gather_facts: true
+  roles:
+    - ssh-keyscan-cluster-machines
+
+- name: Configure workers
+  hosts: workers
+  gather_facts: true
+  roles:
+    - install-worker-certs
+
+- name: Configure control plane
+  hosts: control
+  gather_facts: true
+  roles:
+    - install-control-certs
+    - install-etcd

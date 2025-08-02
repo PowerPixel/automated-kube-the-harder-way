@@ -1,0 +1,12 @@
+---
+- name: Copy certificates to workers
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: .
+    mode: "755"
+  with_items:
+    - "ca.pem"
+    - "kube-proxy.kubeconfig"
+    - "{{ inventory_hostname }}.pem"
+    - "{{ inventory_hostname }}-key.pem"
+    - "{{ inventory_hostname }}.kubeconfig"

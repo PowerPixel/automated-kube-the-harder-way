@@ -1,0 +1,4 @@
+---
+dns_list:
+  - nameser
+  - 1.1.1.1

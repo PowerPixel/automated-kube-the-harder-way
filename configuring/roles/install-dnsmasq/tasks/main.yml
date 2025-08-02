@@ -1,0 +1,28 @@
+---
+# TODO: Disable sudo systemctl disable systemd-resolved and enable dnsmasq
+- name: Install dnsmasq
+  ansible.builtin.apt:
+    name: dnsmasq
+    state: present
+
+- name: Copy dnsmasq configuration
+  ansible.builtin.copy:
+    src: "dnsmasq.conf"
+    dest: "/etc/dnsmasq.conf"
+    mode: '755'
+
+- name: Add hosts entries for nodes
+  ansible.builtin.lineinfile:
+    dest: "/etc/cloud/templates/hosts.debian.tmpl"
+    line: "{{ item }}"
+    state: present
+  with_items: "{{ hosts_entries }}"
+
+- name: Reboot server
+  ansible.builtin.reboot:
+
+- name: Enable dnsmasq
+  ansible.builtin.systemd_service:
+    state: started
+    enabled: true
+    name: dnsmasq

@@ -1,0 +1,21 @@
+---
+- name: Copy certificates to control
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: .
+    mode: "755"
+  with_items:
+    - "ca.pem"
+    - "ca-key.pem"
+    - "kubernetes.pem"
+    - "kubernetes-key.pem"
+    - "service-account.pem"
+    - "service-account-key.pem"
+    - "kube-proxy.kubeconfig"
+    - "admin.kubeconfig"
+    - "kube-controller-manager.kubeconfig"
+    - "kube-scheduler.kubeconfig"
+    - "encryption-config.yaml"
+    - "{{ inventory_hostname }}.pem"
+    - "{{ inventory_hostname }}-key.pem"
+    - "{{ inventory_hostname }}.kubeconfig"

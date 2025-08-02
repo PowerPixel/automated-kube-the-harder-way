@@ -1,0 +1,16 @@
+{
+    "CN": "system:kube-controller-manager",
+    "key": {
+        "algo": "rsa",
+        "size": 4096
+    },
+    "names": [
+        {
+            "C": "FR",
+            "L": "Lyon",
+            "O": "Kubernetes",
+            "OU": "kubenet",
+            "ST": "Rhone"
+        }
+    ]
+}

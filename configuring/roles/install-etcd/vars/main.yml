@@ -1,0 +1,3 @@
+---
+etcd_artifact_name: "etcd-v{{ etcd_version }}-linux-{{ arch }}"
+etcd_archive: "{{ etcd_artifact_name }}.tar.gz"

@@ -1,0 +1,36 @@
+---
+- name: Scan key for each cluster host on the gateway
+  ansible.builtin.shell:
+    cmd: ssh-keyscan -H {{ item }}
+  with_items: "{{ groups['workers'] + groups['control'] }}"
+  register: host_key_result
+  changed_when: false
+  ignore_errors: true
+
+- name: Add key to known_hosts on the gateway if scan was successful
+  ansible.builtin.lineinfile:
+    path: "~/.ssh/known_hosts"
+    line: "{{ item.stdout }}"
+    create: true
+  with_items: "{{ host_key_result.results }}"
+  when: item.rc == 0
+
+- name: Scan key for each cluster host via inventory host on localhost
+  delegate_to: localhost
+  become: false
+  ansible.builtin.shell:
+    cmd: ssh ubuntu@{{ inventory_hostname }} "ssh-keyscan {{ item }}"
+  with_items: "{{ groups['workers'] + groups['control'] }}"
+  register: localhost_key_result
+  changed_when: false
+  ignore_errors: true
+
+- name: Add key to known_hosts on localhost if scan was successful
+  delegate_to: localhost
+  become: false
+  ansible.builtin.lineinfile:
+    path: "~/.ssh/known_hosts"
+    line: "{{ item.stdout }}"
+    create: true
+  with_items: "{{ localhost_key_result.results }}"
+  when: item.rc == 0

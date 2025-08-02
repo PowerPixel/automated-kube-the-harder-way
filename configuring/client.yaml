@@ -1,0 +1,5 @@
+---
+name: Configure client
+hosts: gateway
+roles:
+  - install-client-certs

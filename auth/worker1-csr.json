@@ -1,0 +1,21 @@
+{
+  "CN": "system:node:worker1",
+  "key": {
+    "algo": "rsa",
+    "size": 4096
+  },
+  "names": [
+    {
+      "C": "FR",
+      "L": "Lyon",
+      "O": "Kubernetes",
+      "OU": "kubenet",
+      "ST": "Rhone"
+    }
+  ],
+  "hosts": [
+    "worker1",
+    "worker1.kubenet",
+    "10.0.2.2"
+  ]
+}

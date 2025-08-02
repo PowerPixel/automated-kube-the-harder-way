@@ -1,0 +1,38 @@
+---
+- name: Install prerequisites
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - wget
+    - curl
+
+- name: Download kubectl
+  ansible.builtin.shell:
+    cmd: "{{ item }}"
+  with_items:
+    - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+
+- name: Check kubectl checksum
+  ansible.builtin.shell:
+    cmd: echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+  register: kubectl_check
+
+- name: Fail for kubectl download
+  ansible.builtin.fail:
+    msg: "checksum for kubectl failed. stderr : {{ kubectl_check.stderr }} ; stdout : {{ kubectl_check.stdout }}"
+  when: kubectl_check.rc != 0
+  notify:
+    - Cleanup kubectl files
+
+- name: Install kubectl
+  ansible.builtin.copy:
+    src: "kubectl"
+    dest: "/usr/local/bin/kubectl"
+    owner: root
+    group: root
+    mode: 0755
+    remote_src: true
+  notify:
+    - Cleanup kubectl files

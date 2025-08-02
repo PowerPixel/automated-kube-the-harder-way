@@ -1,0 +1,70 @@
+---
+- name: Download etcd archive
+  delegate_to: localhost
+  become: false
+  ansible.builtin.get_url:
+    url: "https://github.com/etcd-io/etcd/releases/download/v{{ etcd_version }}/{{ etcd_archive }}"
+    dest: "./{{ etcd_archive }}"
+
+- name: Extract archive contents
+  ansible.builtin.unarchive:
+    src: "./{{ etcd_archive }}"
+    dest: "."
+
+- name: Copy binaries to /usr/local/bin
+  become: true
+  block:
+    - name: Find all etcd binaries
+      ansible.builtin.find:
+        paths: "./{{ etcd_artifact_name }}"
+        recurse: false
+        patterns: "etcd*"
+      register: files_to_copy
+    - name: Copy found files
+      ansible.builtin.copy:
+        src: "{{ item.path }}"
+        dest: /usr/local/bin
+        mode: "0777"
+        remote_src: true
+      with_items: "{{ files_to_copy.files }}"
+
+- name: Create etcd directories
+  become: true
+  block:
+    - name: Create configuration directory
+      ansible.builtin.file:
+        path: /etc/etcd/
+        state: directory
+    - name: Create data directory
+      ansible.builtin.file:
+        path: /var/lib/etcd/
+        state: directory
+        mode: "0700"
+
+- name: Copy certificates to etcd configuration directories
+  become: true
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ item }}"
+    dest: /etc/etcd/
+  with_items:
+    - ca.pem
+    - kubernetes-key.pem
+    - kubernetes.pem
+
+- name: Install etcd service
+  become: true
+  ansible.builtin.template:
+    src: "etcd.service.j2"
+    dest: "/etc/systemd/system/etcd.service"
+  vars:
+    # This is fine for now... Since we only have 1 if
+    instance_ip: "{{ ansible_default_ipv4.address }}"
+
+- name: Activate etcd service
+  become: true
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+    state: started
+    name: etcd
+    enabled: true

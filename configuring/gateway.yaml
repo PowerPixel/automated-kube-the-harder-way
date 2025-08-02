@@ -1,0 +1,7 @@
+---
+- name: Configure gateway
+  hosts: gateway
+  roles:
+    - disable-systemd-resolved
+    - install-prereqs
+    - install-dnsmasq

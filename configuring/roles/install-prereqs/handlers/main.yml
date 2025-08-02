@@ -1,0 +1,7 @@
+- name: Cleanup kubectl files
+  ansible.builtin.file:
+    state: absent
+    path: "{{ item }}"
+  with_items:
+    - kubectl
+    - kubectl.sha256

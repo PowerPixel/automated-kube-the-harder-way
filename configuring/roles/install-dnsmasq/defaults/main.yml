@@ -1,0 +1,10 @@
+---
+hosts_entries:
+  - 10.0.0.1  gateway
+  - 10.0.1.1  control0
+  - 10.0.1.2  control1
+  - 10.0.1.3  control2
+  - 10.0.2.1  worker0
+  - 10.0.2.2  worker1
+  - 10.0.2.3  worker2
+  - 10.0.0.255  kubernetes
