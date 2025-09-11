@@ -25,7 +25,7 @@ cat <<EOF > "$vmname-csr.json"
   "hosts": [
     "$vmname",
     "$vmname.kubenet",
-    "10.0.1.${vmid}"
+    "10.16.1.${vmid}"
   ]
 }
 EOF
@@ -53,7 +53,7 @@ cat <<EOF > "$vmname-csr.json"
   "hosts": [
     "$vmname",
     "$vmname.kubenet",
-    "10.0.2.${vmid}"
+    "10.16.2.${vmid}"
   ]
 }
 EOF

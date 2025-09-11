@@ -1,4 +1,0 @@
----
-- name: Execute kubectl configuration script
-  ansible.builtin.shell:
-    cmd: bash -c ./setup-kubectl.sh

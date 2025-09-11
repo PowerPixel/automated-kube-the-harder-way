@@ -81,7 +81,7 @@ resource "proxmox_vm_qemu" "gateway" {
     bridge = "vmbr1"
     macaddr = "52:52:52:00:00:00"
   }
-  ipconfig1 = "ip=10.0.0.1/8"
+  ipconfig1 = "ip=10.16.0.1/16"
 
   sshkeys = file("./pubkey")
 }
@@ -230,6 +230,12 @@ resource "null_resource" "configure_k8s" {
 
   provisioner "local-exec" {
     command = "ansible-playbook -i ../configuring/inventory.py --user ubuntu --become --become-method=sudo ../configuring/k8s-cluster.yaml"
+    
+    interpreter = ["/bin/bash", "-c"]
+  }
+
+  provisioner "local-exec" {
+    command = "ansible-playbook -i ../configuring/inventory.py --user ubuntu --become --become-method=sudo ../configuring/client.yaml"
     
     interpreter = ["/bin/bash", "-c"]
   }

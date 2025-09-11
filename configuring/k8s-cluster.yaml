@@ -1,4 +1,10 @@
 ---
+- name: Configure gateway
+  hosts: gateway
+  gather_facts: true
+  roles:
+    - install-kube-vip
+
 - name: Scan ssh keys for workers and control
   hosts: gateway
   gather_facts: true
@@ -17,3 +23,4 @@
   roles:
     - install-control-certs
     - install-etcd
+    - install-kube-apiserver

@@ -6,6 +6,8 @@
   with_items:
     - wget
     - curl
+    - ipvsadm
+    - ldirectord
 
 - name: Download kubectl
   ansible.builtin.shell:

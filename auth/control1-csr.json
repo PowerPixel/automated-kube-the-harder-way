@@ -16,6 +16,6 @@
   "hosts": [
     "control1",
     "control1.kubenet",
-    "10.0.1.2"
+    "10.16.1.2"
   ]
 }

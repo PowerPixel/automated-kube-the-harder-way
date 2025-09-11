@@ -16,6 +16,6 @@
   "hosts": [
     "worker2",
     "worker2.kubenet",
-    "10.0.2.3"
+    "10.16.2.3"
   ]
 }
