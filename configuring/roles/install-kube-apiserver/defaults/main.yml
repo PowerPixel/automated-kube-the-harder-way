@@ -1,0 +1,4 @@
+---
+arch: "amd64"
+
+k8s_version: "1.33.2"

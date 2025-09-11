@@ -1,0 +1,80 @@
+---
+- name: Download kube-apiserver
+  delegate_to: localhost
+  become: false
+  ansible.builtin.get_url:
+    url: "https://cdn.dl.k8s.io/release/v{{ k8s_version }}/bin/linux/{{ arch }}/kube-apiserver"
+    dest: "./kube-apiserver"
+    mode: "755"
+
+- name: Copy kube-apiserver to /usr/local/bin
+  become: true
+  ansible.builtin.copy:
+    src: "./kube-apiserver"
+    dest: "/usr/local/bin"
+    mode: "755"
+
+- name: Create kube-apiserver directories
+  become: true
+  block:
+    - name: Create configuration directory
+      ansible.builtin.file:
+        path: /var/lib/kubernetes/
+        state: directory
+
+- name: Copy certificates to etcd configuration directories
+  become: true
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ item }}"
+    dest: /var/lib/kubernetes/
+  with_items:
+    - ca.pem
+    - ca-key.pem
+    - kubernetes-key.pem
+    - kubernetes.pem
+    - service-account-key.pem
+    - service-account.pem
+    - encryption-config.yaml
+
+- name: Install kube-apiserver service
+  become: true
+  ansible.builtin.template:
+    src: "kube-apiserver.service.j2"
+    dest: "/etc/systemd/system/kube-apiserver.service"
+  vars:
+    # This is fine for now... Since we only have 1 if
+    instance_ip: "{{ ansible_default_ipv4.address }}"
+
+- name: Activate kube-apiserver service
+  become: true
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+    state: started
+    name: kube-apiserver
+    enabled: true
+
+- name: Ensure netplan configuration directory exists
+  ansible.builtin.file:
+    path: /etc/netplan
+    state: directory
+    mode: '0755'
+
+- name: Add kube-apiserver lb ip to netplan configuration
+  become: true
+  ansible.builtin.template:
+    src: 99-loopback-kube-apiserver-lb.j2
+    dest: /etc/netplan/99-loopback-config.yaml
+    mode: '0644'
+
+- name: Apply netplan configuration
+  ansible.builtin.command: netplan apply
+  changed_when: true
+
+- name: Add sysctl configuration for ignoring arp
+  ansible.builtin.copy:
+    src: 50-kube-vip-arp.conf
+    dest: /etc/sysctl.d/50-vip-arp.conf
+
+- name: Load sysctl configuration
+  ansible.builtin.command: sysctl -p /etc/sysctl.d/50-vip-arp.conf

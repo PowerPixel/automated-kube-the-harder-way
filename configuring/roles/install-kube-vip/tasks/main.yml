@@ -1,0 +1,21 @@
+---
+- name: Install netplan configuration for kube lb
+  ansible.builtin.template:
+    src: 99-vip-kube-apiserver-lb.j2
+    dest: /etc/netplan/99-kube-vip-config.yaml
+    mode: '0600'
+
+- name: Apply netplan configuration
+  ansible.builtin.command: netplan apply
+  changed_when: true
+
+- name: Install ldirectord configuration for lb
+  ansible.builtin.template:
+    src: 999-vip-ldirectord-lb-configuration.j2
+    dest: /etc/ha.d/ldirectord.cf
+    mode: '0600'
+
+- name: Restart ldirectord service
+  ansible.builtin.systemd:
+    name: ldirectord
+    state: restarted
