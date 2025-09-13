@@ -21,7 +21,7 @@
         "kubernetes.default.svc.cluster.local",
         "16.32.0.1",
         "kubernetes.kubenet",
-        "10.16.255.254",
+        "10.16.254.254",
         "control0",
         "control0.kubenet",
         "10.16.1.1",

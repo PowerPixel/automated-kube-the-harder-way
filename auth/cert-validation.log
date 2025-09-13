@@ -1,0 +1,1378 @@
+=== Certificates info and verification ===
+>>> admin.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            08:7c:b4:66:74:4b:51:0f:3d:7c:3b:3b:08:04:11:47:8b:11:a6:56
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=admin
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:ce:07:a5:f6:99:68:93:88:c8:a2:ab:54:13:b5:
+                    11:11:f7:75:d2:e1:d1:5c:46:26:0d:9c:b7:9b:08:
+                    bf:10:bf:8a:de:12:67:45:51:47:14:0a:bd:2d:61:
+                    4c:18:1d:c6:14:9a:91:26:cd:c7:39:c4:3f:8c:1f:
+                    3b:78:e8:58:38:e3:60:f1:d0:e3:08:6b:d2:12:e5:
+                    c2:ee:b3:f9:b4:e6:2a:7c:4a:77:ea:ce:b5:af:b8:
+                    b0:3c:11:47:90:05:90:d4:f5:5d:4f:f4:9e:14:63:
+                    09:ba:17:94:6d:0a:00:c4:e6:9d:6d:f9:e8:18:18:
+                    1b:83:65:74:49:71:67:f8:3e:e3:a6:78:76:c1:86:
+                    5a:32:09:43:d4:5e:ed:f5:ae:ab:28:e1:a0:05:1e:
+                    f9:e1:f1:8f:17:06:0b:1c:2b:9c:51:dd:be:1f:8b:
+                    5c:3c:b9:33:14:f8:3c:36:47:4c:68:9d:01:cb:f0:
+                    6b:e6:d4:f4:af:d6:aa:98:ac:8a:9d:d1:a4:f8:b1:
+                    bd:d1:62:1c:5c:01:1d:10:dd:0e:64:31:47:51:21:
+                    cb:80:2f:20:6a:ae:d4:3b:b1:df:f2:1d:4d:0a:15:
+                    9e:ee:38:06:8d:27:28:61:4b:5c:94:28:de:12:d0:
+                    43:1f:f7:01:e0:e3:dd:25:72:57:db:59:83:bf:80:
+                    cf:78:d2:5c:06:3f:57:d8:76:cc:99:08:ae:06:78:
+                    e1:d1:ab:1d:e7:aa:b9:c3:a4:41:8f:59:9d:a3:42:
+                    8e:2c:36:1d:66:f5:a9:75:1e:b3:76:30:83:fc:34:
+                    59:27:d2:0a:8f:4e:c6:6a:09:82:f4:9a:25:f1:4d:
+                    1b:dc:0d:de:1b:93:35:1c:5e:fb:1e:fe:81:a1:d6:
+                    6a:70:04:eb:e6:cd:24:19:ef:17:79:0b:0d:31:33:
+                    85:bc:59:50:1d:60:b3:d4:d9:0e:01:30:f9:37:0f:
+                    12:68:bb:a9:34:3a:fb:6c:1a:35:f4:6a:68:4e:69:
+                    40:c9:a1:47:cd:ba:aa:c5:00:47:b6:3c:64:e6:f8:
+                    80:2a:55:3b:b5:1d:2e:ec:cc:c3:b6:a6:1b:d5:cf:
+                    d5:84:c4:0f:e2:19:0f:46:e0:75:af:4d:7d:7e:86:
+                    55:e9:f2:bc:6c:76:43:25:33:64:77:61:b1:e1:06:
+                    bc:a1:87:67:50:fb:1e:ad:52:32:66:06:3a:22:7d:
+                    ad:6f:9d:b5:63:ca:a6:ca:65:2b:62:f7:88:2e:e4:
+                    93:10:7a:98:8d:4a:08:d0:9f:03:fc:04:2b:f6:8f:
+                    9b:38:f5:03:7c:9d:3e:f9:de:4d:7c:7a:6c:74:a1:
+                    71:80:5f:80:1a:44:35:df:7d:7c:30:ac:93:da:e0:
+                    13:00:1f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                39:51:8F:D0:BB:23:42:FD:95:69:E2:90:C7:16:0E:65:4D:D6:D1:98
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        86:28:60:26:a4:c3:f0:f6:bb:cc:55:ee:3e:03:19:a6:f8:7b:
+        d6:e3:14:fa:39:e5:8b:0d:b0:a8:31:84:47:73:6a:07:85:c2:
+        47:04:f4:6b:4f:df:ec:f6:e6:90:2e:e9:ed:e0:ba:3c:42:7a:
+        0d:4a:85:2b:89:9e:57:75:91:2d:5d:ff:49:11:47:b4:17:21:
+        b8:cf:3f:6c:a5:b8:02:63:a7:86:2b:e1:61:0f:38:93:56:51:
+        1a:94:36:ea:98:fd:40:83:5e:e0:6a:8d:7e:97:e7:29:fa:f0:
+        55:90:a7:a9:1f:63:1e:f5:95:98:08:e1:bf:24:a2:a9:a6:77:
+        42:6b:38:7f:bd:2c:bb:fd:cb:10:72:a2:70:19:7f:a5:aa:99:
+        18:3b:30:c8:3d:4c:6f:d4:87:46:a7:8d:cd:57:a6:3b:4e:a5:
+        a2:84:2e:b0:9c:93:f0:51:28:87:f5:88:72:e5:64:75:b3:03:
+        e2:8b:55:82:55:fc:2c:18:a2:75:96:84:c2:4a:fa:89:ed:60:
+        5b:1a:54:10:80:14:b8:76:de:1c:30:31:0a:93:b7:d9:43:36:
+        c5:04:19:b2:b9:36:ed:46:fd:7b:77:8e:db:00:13:b6:c1:e3:
+        ac:78:46:b3:ba:27:33:63:96:51:89:52:0b:67:06:f5:dc:60:
+        1c:39:96:a5:17:94:88:30:b8:56:db:a1:25:79:c3:09:6a:00:
+        09:30:fe:d1:ed:22:ce:c5:f3:f6:a5:71:9c:15:5f:cf:3c:fd:
+        4f:9f:6b:09:64:d6:3b:22:96:43:e0:bc:cc:95:34:52:33:d7:
+        6f:d9:12:bc:70:cb:d7:7b:36:c3:ab:85:e2:23:16:d0:c1:4f:
+        67:0a:69:fd:85:f5:c3:5e:dd:b5:41:65:70:92:d4:09:72:89:
+        0d:61:96:f0:2f:cb:9f:04:d7:ba:20:0e:d9:ba:d7:9a:1f:46:
+        84:4d:77:30:8a:66:da:a5:42:a3:66:c6:05:85:eb:78:98:2b:
+        69:af:02:67:73:de:12:cc:6e:57:13:e5:10:75:8c:47:50:e3:
+        df:0c:fa:f7:21:9f:bc:a9:5c:83:93:63:99:17:58:53:2a:e8:
+        7c:17:53:3a:e0:83:dc:d5:01:b7:74:dc:0c:0e:3e:5a:ca:d8:
+        fa:8c:f0:cb:d6:cd:37:83:b1:72:f2:de:a7:96:4c:2a:4d:e5:
+        f6:2f:4a:9d:74:7c:07:b9:01:a6:9a:25:90:cd:3b:f5:20:ee:
+        06:a2:0d:0d:23:ee:5e:42:98:41:0c:27:80:8d:ed:1d:f7:97:
+        ce:76:64:56:03:a3:5e:53:45:06:4c:3e:7f:a6:83:e4:3f:ea:
+        64:bf:7a:86:06:3c:20:40
+>>> Verifying admin.pem
+admin.pem: OK
+
+>>> ca.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            7e:7c:ac:78:0f:51:b5:60:d5:e5:36:da:bb:20:43:54:5d:f5:7f:b3
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  2 16:04:00 2030 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:af:90:16:fb:89:a8:51:1d:db:3b:6f:23:53:6d:
+                    56:d3:c9:9d:29:38:50:14:72:c4:95:73:2f:f1:4b:
+                    9a:0b:5c:4e:18:05:98:c9:0b:9b:43:d1:b1:0a:70:
+                    45:8f:27:7e:d6:4d:71:f0:6f:bb:c3:bb:1e:6a:72:
+                    ae:88:60:8c:44:72:42:1d:6e:eb:fb:28:53:c0:c4:
+                    b4:95:0d:ef:c0:e5:4e:9c:f4:ed:fb:84:83:03:9e:
+                    6a:fe:cb:ee:bb:bd:7f:8e:03:39:5a:87:ce:7a:6e:
+                    d4:32:e6:24:4d:56:f5:64:a9:ca:17:07:2f:50:2b:
+                    af:e2:65:d0:b1:ed:c6:74:b0:7d:35:a7:37:ca:1a:
+                    b1:43:56:c6:60:45:98:de:96:87:b3:70:bc:cb:d8:
+                    c5:64:f8:0d:97:10:29:af:6d:57:f2:2f:74:ff:3b:
+                    4c:d1:a3:89:b2:f4:05:47:8a:f2:b7:86:0a:9f:b5:
+                    83:f1:92:13:f6:0d:42:f3:83:a8:8e:69:23:ae:83:
+                    b3:61:14:6c:8a:89:db:3c:7d:f5:ee:7d:3d:39:67:
+                    2d:19:c9:42:f2:22:d6:64:81:28:c7:c4:10:2e:57:
+                    62:0d:fd:d7:0c:fd:2a:6d:bc:54:62:21:15:57:48:
+                    b9:48:f9:04:ae:a5:de:3a:db:7a:59:b4:fe:00:c4:
+                    af:44:66:63:92:75:14:4d:9c:2b:31:52:06:8d:64:
+                    e6:96:5d:e9:3a:60:1a:e9:ae:7b:7a:59:98:07:e1:
+                    fc:78:0b:36:fe:ed:81:1c:68:b7:bc:aa:48:2c:36:
+                    e6:02:58:0c:c1:d2:50:d3:90:5a:64:0a:23:48:da:
+                    8b:08:33:4c:fe:aa:6c:f6:9e:83:d1:8c:a9:4e:04:
+                    04:46:34:68:87:4e:6e:3f:88:65:d7:e5:a1:d6:c8:
+                    32:10:45:86:a8:b6:23:09:92:8c:fc:fc:29:58:69:
+                    83:9a:dd:fe:36:35:45:cb:8f:b4:14:fd:43:81:75:
+                    5e:de:ad:61:32:2a:0b:61:8e:37:9e:b9:8a:91:09:
+                    a8:45:cd:0c:cb:a9:0a:6d:e8:58:5f:d1:76:16:1a:
+                    fe:2f:43:06:78:48:99:c3:a1:5d:d9:d7:53:c2:68:
+                    a5:f1:b1:c9:ec:55:4e:d1:10:75:57:e7:42:8f:10:
+                    02:a6:ef:de:7c:f8:68:36:64:4f:af:86:6d:1f:c5:
+                    e3:94:75:d0:23:2a:ac:26:f1:c1:18:1e:16:bf:f7:
+                    df:67:82:98:36:1e:fd:97:60:c2:1e:8c:3e:fc:51:
+                    a0:49:6d:52:0c:ee:fc:f3:7c:e3:b8:57:83:47:d2:
+                    a5:e0:9a:99:01:26:a5:3d:c1:5b:71:ca:09:ce:3e:
+                    30:42:85
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        46:63:63:a8:54:39:12:de:21:b8:56:46:a0:0b:74:d8:50:d8:
+        ac:c0:9b:dc:94:47:ca:2f:75:bb:e5:c0:4b:8a:97:8a:04:d5:
+        7a:94:84:31:49:18:7b:3c:e7:e9:ac:3a:96:36:75:57:c9:bc:
+        a8:55:4c:ce:d7:60:a4:bd:55:d7:ab:ab:a8:b2:65:19:35:ab:
+        f8:0c:23:74:3d:85:c1:16:3b:d4:e8:8b:6f:25:4e:01:24:08:
+        f4:b4:3f:b3:92:e9:ac:11:05:f1:5a:41:f9:53:8b:ea:74:f4:
+        5c:25:da:ca:0a:cb:0a:a2:9c:04:4d:2c:3f:22:6b:b0:07:dd:
+        e2:62:ca:30:da:0d:db:c5:38:e9:0e:cc:56:e5:f1:20:27:3e:
+        de:c8:f4:6d:27:9d:ad:9b:71:37:03:01:0c:20:7b:38:f5:60:
+        22:0e:2f:6f:1e:77:06:b3:bf:b5:09:87:86:28:1b:d3:5a:06:
+        62:89:79:91:ec:e8:e0:39:9d:16:b8:01:9d:c1:e4:88:94:d3:
+        da:ea:99:55:51:5b:87:ed:38:62:63:7b:ff:c5:1c:ae:6a:cc:
+        50:e6:a1:32:d4:f0:c7:74:05:4f:59:56:14:33:44:ec:f7:93:
+        21:83:ee:51:21:35:e2:dc:90:b8:59:50:02:d8:02:03:64:bb:
+        39:be:2d:ea:a4:26:55:73:85:01:0c:05:39:5a:e7:8f:a1:86:
+        c4:d7:54:fd:da:c0:5a:68:31:dd:78:a1:4d:61:1d:37:5e:51:
+        10:5d:4f:17:04:dc:e5:c6:e6:fa:06:85:44:84:39:03:e7:45:
+        48:6c:02:df:34:25:cf:11:a8:17:3b:1a:d1:60:56:63:c3:15:
+        a5:58:dd:28:05:ea:29:0d:f8:db:7e:40:60:f7:3c:bb:5d:4e:
+        06:e0:f0:2a:96:1a:fd:3e:2b:3e:8d:b6:6f:8e:92:9c:96:1d:
+        8a:12:30:e9:1e:8b:8e:4e:a2:4d:36:46:30:a2:e7:f0:58:f4:
+        c0:a1:b3:b7:0f:72:4e:62:50:a4:55:85:f6:e4:d5:26:2e:df:
+        ca:9a:b1:04:03:aa:76:f2:79:59:62:ad:53:a5:1f:21:36:96:
+        b2:16:0d:75:86:da:e1:e4:37:4e:e7:21:70:84:d1:81:e7:3e:
+        12:51:94:b0:81:15:87:2b:ad:d2:ee:88:0b:53:d6:fd:da:24:
+        cd:98:40:82:44:43:71:42:90:da:25:bd:bd:5c:d5:cc:1e:b9:
+        f2:85:1d:0c:31:06:47:1b:b0:84:21:3a:2f:34:a4:24:cd:c8:
+        c0:8b:17:3e:7b:3d:22:f7:a7:c8:d1:a9:ad:59:64:84:e2:53:
+        09:37:75:13:e5:69:3d:0e
+>>> Verifying ca.pem
+ca.pem: OK
+
+>>> control0.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            5d:f1:ec:14:d9:81:dd:df:2e:4e:d2:09:5d:7a:1d:37:32:8a:29:19
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:control0
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:ce:eb:83:fd:3d:2e:be:cd:74:55:7c:a2:d9:b6:
+                    5b:fa:c2:f0:49:df:b1:8a:a2:37:67:60:6b:7f:c5:
+                    8c:b1:da:2b:7e:86:08:bf:81:4b:b4:d5:15:a1:ee:
+                    c1:b3:e4:c8:aa:3f:99:9c:63:cf:83:41:a0:2e:97:
+                    61:d0:59:62:cf:26:4a:39:a5:12:61:d3:45:4a:f5:
+                    79:1c:fb:2f:4b:d4:5d:66:a0:a4:00:b4:03:cb:18:
+                    d0:76:c2:01:4f:d6:6a:14:88:82:65:e3:86:af:e4:
+                    41:2a:63:4d:d5:17:e4:d2:8c:2b:b9:e0:5c:6b:50:
+                    4b:2f:c0:d4:b5:dc:98:11:78:b7:21:2f:2f:df:9c:
+                    39:9d:ad:b8:dc:90:95:b7:af:18:ec:d1:6b:67:12:
+                    f7:9b:44:7e:4c:bd:4a:c2:06:ad:81:58:bd:dc:76:
+                    74:79:6e:f2:ae:8e:a7:6b:37:d9:53:8a:d4:96:bd:
+                    00:74:b8:be:e0:cd:ea:66:73:8a:10:98:ef:f7:a6:
+                    d9:f4:bb:0c:fd:70:6c:0f:d6:bc:5f:36:29:74:c5:
+                    70:b3:5a:cd:d2:16:e6:5a:96:26:e8:57:08:64:08:
+                    12:e4:c9:b1:ce:85:1f:d5:4e:3c:d3:f7:11:b6:1f:
+                    3c:24:f2:1f:65:1b:45:aa:5d:28:77:4a:bd:6f:85:
+                    ff:1e:b2:03:24:6f:e5:a4:40:58:26:0b:8b:12:47:
+                    9e:af:e2:59:5f:c3:b1:00:f6:41:d9:7c:0b:0c:6c:
+                    9e:be:25:fa:bf:05:8d:24:5e:b6:a6:4a:18:a5:af:
+                    90:80:7f:2f:0e:dc:eb:2c:0d:ad:8f:ab:b6:77:02:
+                    9c:90:b1:a8:6e:4f:43:0e:27:83:2b:08:47:ae:23:
+                    5d:dc:26:8c:b3:5b:46:9a:5a:dd:28:7b:05:f3:c8:
+                    e5:28:26:79:2b:28:69:1a:b7:dc:f9:82:23:39:21:
+                    c6:61:98:c4:5b:e7:41:2b:2b:81:1e:5d:42:c2:1d:
+                    94:ef:df:ae:a4:4f:b8:4a:92:a6:bd:b8:e1:56:1f:
+                    f4:2e:89:24:cd:ec:9b:67:ce:b8:45:92:bb:88:94:
+                    02:ca:c4:d7:d4:1e:67:c9:5c:77:f4:c1:90:63:3d:
+                    85:e5:ba:99:6b:65:a2:ce:2a:c5:b1:a1:3d:6d:c7:
+                    8f:8a:6b:5c:24:e1:c8:d4:64:ca:c5:66:56:da:28:
+                    72:ed:a2:9f:63:0b:69:0e:d6:a4:1b:96:68:d8:b0:
+                    e2:06:a7:0c:6d:25:f3:00:c5:5c:7b:c9:a5:eb:88:
+                    75:65:53:d5:43:e6:8b:df:cf:d6:b4:a4:d3:21:48:
+                    e9:12:1c:da:98:23:f0:6a:c0:3b:ae:08:36:ff:fa:
+                    34:96:07
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                7C:50:B1:A1:19:F9:B5:6E:32:57:48:A2:86:A8:05:D5:24:42:D1:DA
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:control0, DNS:control0.kubenet, IP Address:10.16.1.1
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        85:60:4e:c0:93:a6:e2:9d:02:f5:29:43:b2:3c:83:bb:78:35:
+        1d:9e:b0:9c:b3:f9:44:d8:e9:66:cf:f3:e1:9b:28:ce:94:e5:
+        cc:5f:fc:24:d5:18:77:47:43:91:3a:06:12:40:c4:f7:ce:da:
+        2c:21:5f:2e:e1:47:b4:f7:73:19:5f:cd:31:b9:dc:62:d6:91:
+        e1:99:2b:f4:b5:08:ef:61:1d:02:ed:10:96:a6:3d:7c:a1:a8:
+        48:fe:f4:71:06:30:f6:7b:a6:4f:bc:5c:03:24:66:c3:6b:46:
+        34:68:90:bd:aa:0d:aa:07:50:d2:d4:05:79:a4:76:a4:42:3c:
+        9e:c2:68:eb:a0:4b:56:90:6c:82:fe:80:8d:1a:01:a6:ae:64:
+        6c:75:bb:be:6b:a8:8c:b8:02:7a:eb:a0:c7:67:ae:cd:a0:f4:
+        37:93:56:d4:cc:03:7d:ee:d3:e6:5c:45:d6:53:14:51:6f:51:
+        a0:6d:7e:dd:92:b7:43:e7:70:af:e0:a9:6b:25:1d:65:ce:08:
+        84:6c:12:22:42:06:5e:be:58:27:6c:3b:41:5b:da:77:2c:54:
+        6a:d6:9f:d6:09:f1:c4:d6:fb:e9:77:b7:7d:2b:1a:f5:57:cc:
+        a1:84:41:09:ff:1c:d9:1f:81:a8:6b:b2:79:67:12:6a:8f:58:
+        31:e6:0f:93:b8:ac:5d:47:e8:1d:7e:62:e9:81:a2:c7:79:6d:
+        5b:07:4c:4c:82:3f:c0:3b:6f:54:ee:60:a6:e6:a4:57:4c:1b:
+        42:fb:3b:0f:29:f2:76:a6:ff:ea:89:b6:05:67:c0:99:55:b9:
+        5f:df:ad:a0:e7:45:e2:b1:87:ef:d4:f9:dc:24:6e:be:46:37:
+        2a:b3:f4:3a:b9:7a:29:0c:61:ec:f8:a8:36:ff:04:b0:39:95:
+        6e:ec:1d:76:4e:11:8f:f4:20:21:3b:57:8a:3b:7b:ea:d1:32:
+        cd:3b:2b:ef:7f:13:a0:a5:09:f3:0d:bb:24:89:6e:44:ca:8e:
+        4f:01:62:6d:e3:f7:76:ac:50:53:ee:db:08:d3:77:88:d0:0c:
+        ca:6e:98:77:f5:87:5d:d9:20:c9:c5:31:58:fa:76:bb:f9:6a:
+        dd:be:d7:9a:70:4f:0a:84:19:c3:91:70:e4:71:35:34:75:16:
+        b6:c9:5b:ad:e1:d8:6a:b3:4c:52:d2:7d:50:e4:ef:d8:60:d2:
+        5e:32:8e:47:d0:4d:16:de:76:9e:ef:60:d1:8e:db:0d:dd:df:
+        86:74:10:d8:87:1f:c5:c9:44:df:f6:d1:b0:1d:0c:a9:f5:a4:
+        df:e7:e8:55:36:ff:45:59:f8:37:35:97:86:f9:2b:e5:bb:41:
+        c6:36:cf:45:57:19:46:53
+>>> Verifying control0.pem
+control0.pem: OK
+
+>>> control1.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            18:13:d7:91:67:da:9a:40:35:a6:77:e3:2d:67:77:03:52:03:42:b4
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:control1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b0:f7:fd:41:14:af:44:71:f3:9f:dd:7c:86:b7:
+                    b2:d0:8b:b6:95:0b:9a:d0:65:1f:a4:32:49:1e:db:
+                    97:b2:18:53:10:bf:bd:dd:9c:f3:05:72:d3:12:22:
+                    e8:e0:5b:00:ea:8c:06:10:8f:dd:fa:29:a3:ec:10:
+                    92:f0:aa:79:f7:6e:5d:f6:e2:72:1a:e0:03:62:19:
+                    6a:41:bb:a3:e0:83:23:8a:8a:11:62:1d:35:66:a0:
+                    30:f1:69:be:23:10:77:4f:55:e1:86:07:b5:b5:41:
+                    04:89:31:48:11:67:45:27:fa:60:bc:10:90:aa:a5:
+                    c2:1f:11:69:31:61:7f:3a:2f:7b:da:d9:29:6c:bb:
+                    a2:92:82:4b:d7:e0:bb:f0:dc:8b:ff:4c:bb:a9:ce:
+                    dc:e4:f8:d7:0a:a1:37:d5:ef:40:81:6d:e8:63:27:
+                    be:29:6b:c5:ba:0c:8e:4c:1b:ce:d0:42:7c:91:74:
+                    87:ca:5a:41:36:83:2e:28:ac:ce:0d:d0:ff:85:d6:
+                    3a:7f:3b:8b:24:88:8b:56:c6:5e:42:aa:b3:37:99:
+                    0c:4d:d9:56:45:aa:7b:9f:99:3a:67:b4:4f:85:cc:
+                    f3:b2:75:0a:40:a5:e8:63:12:76:70:07:ba:60:b3:
+                    b5:3d:6b:ac:ac:99:96:2a:6f:02:f0:d7:5c:d8:b1:
+                    87:4c:b1:78:a2:91:4d:09:06:5e:bf:56:f1:7c:88:
+                    fd:89:52:5a:67:bd:75:36:09:53:b3:b7:14:b6:48:
+                    2f:93:d8:49:6a:72:62:67:15:22:b1:b4:90:41:e2:
+                    2f:27:4f:30:14:42:04:be:d1:dc:1e:a5:cd:21:b7:
+                    6c:4b:7e:f8:15:5f:44:e0:c8:bb:d4:99:64:d8:c5:
+                    cb:7e:85:56:15:31:2e:15:4c:67:e2:0f:ab:bf:15:
+                    26:db:74:ee:33:ef:bb:f9:42:9e:47:d8:93:63:c5:
+                    bd:24:01:d3:24:f3:3c:e5:22:b1:86:26:d5:8c:c3:
+                    a9:9d:ce:2f:fb:aa:fd:3e:ec:4a:8c:21:9f:a4:07:
+                    4c:06:ed:26:b8:d4:9d:22:3a:7b:cf:7f:46:49:e5:
+                    7e:f2:f3:10:b0:c9:73:a6:6a:09:08:14:97:cf:1b:
+                    45:e8:87:3c:09:d0:0e:8a:30:41:61:6c:c3:35:0e:
+                    01:92:81:f5:1c:cc:3e:0e:70:df:45:63:ad:0e:f1:
+                    f5:30:57:d8:b2:7a:b9:53:87:48:2c:e0:70:80:ca:
+                    a2:17:eb:eb:5e:c8:e8:2e:0e:75:76:d1:aa:10:b0:
+                    8e:cb:40:70:8e:f1:0e:e0:65:2a:1d:ae:08:7b:e5:
+                    f7:82:71:85:6d:a9:08:49:36:b9:3a:24:aa:7f:50:
+                    08:00:27
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                B9:F6:96:CE:E4:AB:C4:56:02:2C:B7:DC:27:54:5D:89:22:5E:10:84
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:control1, DNS:control1.kubenet, IP Address:10.16.1.2
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        ab:0a:7b:f2:b6:fc:7e:44:dc:2a:16:b8:54:34:8f:29:0e:74:
+        79:47:0c:7b:6a:a5:7e:b4:0a:b3:00:d2:c0:fb:51:7d:e5:2b:
+        32:a2:13:b8:42:c8:91:62:a8:1b:c9:be:9f:e6:4f:31:0b:6e:
+        7a:6c:1b:df:a2:52:cf:4c:7f:69:dd:2a:61:35:e2:a9:76:64:
+        77:ec:54:e8:88:28:51:e0:dd:87:33:6d:6e:bd:f2:54:6c:4f:
+        f9:29:a9:ce:1c:fe:b2:a4:b7:e6:79:db:3d:39:25:0c:3b:06:
+        97:0a:9e:b6:1d:a7:16:db:4b:32:ca:f2:0e:f4:79:e5:ea:16:
+        62:f5:ab:0a:6d:82:e5:c0:e5:d8:93:d3:20:75:10:d0:4a:30:
+        5b:33:c9:db:04:04:70:c8:84:47:f7:05:0f:0c:aa:a5:09:6b:
+        61:41:be:9a:3e:fc:a7:25:b7:a7:fd:2e:e2:d4:f8:93:e8:3a:
+        38:f5:61:d2:5f:c4:8b:42:4c:d0:a8:6b:95:7c:02:b5:c0:47:
+        68:ad:ad:82:77:a7:fe:27:0a:33:0f:ed:e7:19:58:21:02:17:
+        97:2b:cb:fe:92:b5:5f:42:b8:ec:6c:f8:48:e7:a9:53:92:fd:
+        f7:61:54:e2:ee:b0:63:71:04:ad:ee:0d:a8:b0:ef:98:2d:83:
+        9f:cd:7e:c6:55:25:38:6e:98:fe:72:95:6f:71:a3:bf:fb:0c:
+        fa:68:cd:26:b4:88:d7:f7:a9:03:7c:21:dd:a8:ca:08:3f:55:
+        ec:36:f8:09:e0:19:1a:e8:7b:9f:8d:39:c1:e0:8e:ea:6d:24:
+        74:40:a8:24:15:e5:be:a5:68:6e:bc:b9:58:1f:fc:75:b0:d1:
+        fc:18:a8:06:8a:4d:36:f3:ef:84:24:df:15:52:8b:55:97:a8:
+        7b:ba:d8:cd:5e:0f:eb:e6:15:77:3c:80:e8:81:e5:06:78:b0:
+        8e:64:2a:f5:37:0e:c3:64:d3:70:57:7c:e9:e5:08:ce:2d:d1:
+        f8:ae:5d:7f:1b:9a:87:87:a3:69:79:2f:36:6f:90:9b:e4:95:
+        68:6a:78:88:01:b5:50:fb:43:17:a8:0e:ab:08:c6:6a:94:7b:
+        85:7e:a3:36:ae:ee:8c:25:3d:f5:05:a6:91:a3:ab:7e:f6:28:
+        a6:88:16:9f:6b:2f:68:27:09:48:3c:01:44:de:8f:0f:76:49:
+        20:e7:d0:80:6d:c7:f5:16:06:82:42:9b:16:ae:53:0e:5f:de:
+        b2:b5:dd:98:22:5e:ce:0b:a0:f2:16:d0:bf:01:9a:d1:6f:c1:
+        8d:cf:2e:7c:9e:02:07:c9:6e:80:08:ef:1d:e4:41:f8:59:06:
+        94:be:43:f9:1b:66:f1:f7
+>>> Verifying control1.pem
+control1.pem: OK
+
+>>> control2.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6d:a8:48:f0:62:c4:85:05:72:1b:10:29:c3:c9:b9:89:7b:be:71:b0
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:control2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b3:3f:36:c9:80:ad:fa:a3:eb:7b:ae:a7:66:62:
+                    95:4f:7d:f6:d5:7d:66:d9:1f:3b:90:33:a3:b2:3f:
+                    14:58:9b:28:f5:b7:ab:80:08:b1:93:6a:42:d6:e7:
+                    28:68:cf:89:3a:bc:c5:c6:8f:18:c6:4d:58:09:ca:
+                    29:83:d5:9d:2a:86:e2:cb:37:bd:9b:6f:5c:65:95:
+                    4e:53:ef:9a:8f:fc:42:8b:60:1c:b7:d9:58:98:b2:
+                    00:6c:1d:b8:91:c9:24:54:3d:ea:64:2f:49:20:61:
+                    b2:60:b8:fd:f9:ac:75:c2:df:e3:96:4b:c8:25:b0:
+                    5f:92:1f:b2:7b:2e:78:80:68:98:c8:aa:d3:ba:04:
+                    5a:19:2c:9e:ef:dc:bc:7e:9a:58:8a:ec:91:b9:7b:
+                    e1:91:c4:aa:d0:63:41:c4:71:a1:e5:f6:f2:b9:70:
+                    89:49:ea:f1:36:98:15:7f:94:46:10:d3:db:dc:28:
+                    26:fb:21:b9:a6:ee:1f:9e:a9:fa:b1:32:74:f8:6d:
+                    06:8c:64:f9:9e:74:e5:3b:17:e1:44:ef:1e:1a:ce:
+                    bc:b9:e7:8e:f2:d8:b9:4b:5d:52:27:69:18:07:ae:
+                    4f:0a:b7:27:32:74:8a:7f:02:82:8d:68:c1:12:89:
+                    31:66:91:b5:e8:01:8e:cc:e7:71:dd:31:48:8b:a0:
+                    d4:37:0e:cf:52:bf:29:1d:0b:06:eb:99:a2:05:37:
+                    84:4f:27:f3:96:ed:d5:65:c5:79:ce:81:7b:fb:0f:
+                    52:e5:02:94:dc:13:8b:c1:ab:63:1a:dc:87:53:d0:
+                    fe:9a:34:0c:f7:b7:31:b5:ae:f6:cc:28:1b:53:50:
+                    8d:8a:ec:e0:51:6f:d8:c8:1f:59:0e:d1:69:c1:9f:
+                    a0:7a:7b:04:c5:5c:40:ec:a9:6b:d8:99:ea:1e:22:
+                    b9:a7:50:26:b8:08:c2:d6:84:b1:eb:65:c4:08:2a:
+                    5d:4b:4b:03:d7:27:89:cb:1e:5b:8e:c7:50:96:84:
+                    c4:8e:a8:eb:5a:94:6d:dc:87:a8:5b:5c:7a:d1:23:
+                    c2:b9:e4:c7:b1:ce:c5:bc:6a:a9:7a:d7:16:e4:a5:
+                    71:8e:70:83:96:71:2f:20:56:cf:13:35:f4:91:67:
+                    3f:67:02:e6:64:0f:3f:44:f9:7c:1c:41:5f:96:32:
+                    b5:9b:49:b8:b3:d7:af:a2:b0:e2:6a:22:b2:c8:ec:
+                    5a:07:e0:4b:ea:bb:da:96:31:d2:b1:49:ca:6f:b5:
+                    a1:08:0b:49:eb:9f:10:af:26:6e:f1:18:a3:e5:93:
+                    3b:80:f0:3d:9d:09:3c:87:61:a4:fe:6a:f3:64:cd:
+                    eb:1e:03:61:0b:58:b5:ac:01:14:00:c0:36:26:96:
+                    af:01:ed
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                74:7C:F9:04:A2:80:8F:91:AF:80:B4:C0:5B:1D:3F:77:09:C3:24:80
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:control2, DNS:control2.kubenet, IP Address:10.16.1.3
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        15:44:1a:83:6b:37:18:a1:70:81:bc:5f:f3:22:f3:25:9f:5f:
+        5a:17:df:1d:3b:cf:b5:95:13:81:59:70:cd:bb:7d:35:e2:ba:
+        48:a4:21:b4:92:05:04:ac:f3:44:ba:78:55:c4:80:d1:f6:61:
+        4e:a2:d4:38:ff:d6:f4:51:0b:b8:4a:a2:00:d9:42:4d:01:ed:
+        34:d6:b8:9e:f1:a3:fc:20:d9:17:97:39:d3:0d:fa:57:ed:46:
+        05:a0:8c:aa:83:2d:cd:a8:64:69:e3:6b:d4:f2:1b:53:cc:30:
+        bb:08:d1:09:fb:bd:cb:83:8f:da:71:92:93:6c:33:ca:f2:e2:
+        49:bd:0d:b1:f3:bd:73:9f:8a:6b:0c:48:14:1a:db:87:c7:a7:
+        c8:dd:3b:92:cb:d6:c2:5c:5c:f2:f0:36:45:3e:83:94:9f:6c:
+        87:1e:1e:56:9a:a1:9f:15:ac:c4:f2:5f:5b:0e:7c:d9:ba:a8:
+        da:46:0c:9c:8b:f6:d4:71:46:69:bb:b3:ec:70:d8:68:e9:e0:
+        af:e5:6a:75:4d:90:2d:ff:86:8e:67:93:9c:05:f9:3a:b4:56:
+        59:83:1d:11:10:c6:7b:5c:f8:f1:e0:c4:5f:30:93:2a:97:96:
+        10:66:4b:18:7f:b7:0a:44:ed:29:a0:5c:46:99:4d:73:c7:68:
+        55:31:d9:8c:6f:41:da:7c:2b:e2:a0:46:46:91:e8:f5:7b:76:
+        32:c5:d7:22:8a:14:dc:b5:11:5d:3f:5b:5c:61:db:1e:43:3b:
+        64:1d:19:5a:b9:e2:46:91:cb:a1:a5:2b:1a:2a:2d:7b:e8:4b:
+        53:b1:d6:56:e7:f8:b9:56:8d:9c:96:58:68:96:85:89:0c:10:
+        a3:dc:08:75:d1:70:9a:68:c0:ec:16:1b:1d:fe:0d:d3:f4:2c:
+        f5:b4:c4:61:95:c0:28:2e:5b:80:ea:a7:65:0d:46:68:22:20:
+        04:09:a9:a4:67:a6:71:db:f9:af:91:92:f1:ed:8e:65:93:da:
+        68:e2:81:f6:09:a0:68:ff:c5:3d:42:fa:1c:11:51:23:a6:b2:
+        44:5f:38:1c:d0:60:cf:f0:7a:b7:9a:5b:c5:c9:59:8b:90:aa:
+        7f:4b:08:e5:c5:17:4a:1a:e2:0a:8b:c7:41:c1:9e:0c:dd:90:
+        d8:53:dd:a1:39:a4:bc:2d:02:5c:32:09:7a:36:de:d1:01:1a:
+        b0:f1:b0:26:34:19:8a:88:6a:ef:09:38:14:a4:4a:7d:71:47:
+        6e:7b:42:bf:a0:11:16:25:41:94:5d:5c:97:51:2a:35:16:ec:
+        ad:de:7a:cd:3c:33:2d:28:39:2a:a0:77:42:cb:22:9e:6e:52:
+        31:2b:62:24:1c:35:e9:f4
+>>> Verifying control2.pem
+control2.pem: OK
+
+>>> kube-controller-manager.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            7f:c6:2f:15:b7:d6:11:50:0e:e2:34:bc:41:08:4a:a0:53:bc:72:c0
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:kube-controller-manager
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:a1:63:06:41:cf:11:f4:44:f0:be:27:c8:ea:a2:
+                    d8:1a:e3:fa:a9:65:06:58:cf:20:55:43:67:01:e4:
+                    7d:51:65:dc:fc:35:2c:4f:09:7d:8b:c2:96:dd:53:
+                    6d:c8:0d:42:7f:30:76:9c:85:67:03:59:c2:9f:39:
+                    1b:db:44:30:ed:c5:4e:3b:76:67:8c:4b:e4:a1:01:
+                    44:dc:0c:78:08:9b:74:4e:5a:83:32:40:92:f4:ee:
+                    c2:df:3d:ee:a1:37:84:71:44:7e:fc:4f:50:4f:b8:
+                    c2:de:cb:39:26:4c:9d:bb:76:ee:0d:53:9c:6b:13:
+                    27:15:fb:1f:4f:cd:58:6f:47:1c:b0:4b:95:23:79:
+                    53:1a:16:7e:af:94:20:a1:5f:f5:11:d6:5d:92:67:
+                    a1:e2:5a:77:dc:be:c7:7b:e4:92:d5:90:44:fa:06:
+                    c1:a9:a7:44:1b:6b:91:b9:3d:4a:5e:5a:f5:f7:3e:
+                    ae:1e:29:2f:97:3b:1d:de:0e:00:32:50:06:db:01:
+                    09:48:cb:ae:b5:0f:42:d4:46:2d:1d:81:35:8c:88:
+                    42:a7:0c:73:80:c5:ce:4f:70:16:d2:d7:b1:9f:b2:
+                    b7:71:98:15:6c:f4:1f:e3:b4:c8:db:d9:97:2b:b5:
+                    29:c7:ea:83:55:74:7e:d6:06:53:ed:ef:94:bc:d4:
+                    a0:10:be:6a:5c:f7:11:33:a4:72:d0:62:d5:51:47:
+                    37:c0:5e:47:6b:6b:e1:94:85:46:c9:21:e5:a1:ba:
+                    cf:01:ef:cb:d9:48:b4:d4:26:54:e1:f5:eb:f3:ab:
+                    0a:e5:c0:ac:10:f1:ef:a9:dc:a7:f3:6d:66:92:2f:
+                    df:2b:d4:c3:be:02:85:1e:99:58:99:23:7a:e3:ac:
+                    de:61:ff:5f:56:09:50:38:6a:2d:07:5a:4a:a6:76:
+                    7d:7b:34:56:f4:51:0c:39:8c:8c:48:38:45:29:76:
+                    b3:4d:74:d5:d2:a8:7c:bf:65:ed:90:ac:f3:ef:f9:
+                    b6:b1:42:ec:ca:90:64:da:8f:bb:0f:f8:0d:41:9d:
+                    1c:4b:0a:6b:65:54:d9:82:7d:89:15:19:27:b9:b8:
+                    62:4c:68:38:53:ad:4b:b2:47:a0:7a:ce:90:15:02:
+                    e0:b2:1f:1a:2e:ce:49:de:6a:b2:54:17:9d:2b:fb:
+                    be:26:7b:dd:bc:f0:5e:c9:73:8d:d2:b5:0e:03:af:
+                    8f:1a:64:53:0e:b6:9e:bf:53:aa:d5:33:c2:86:0e:
+                    02:b8:de:4b:c2:87:4f:1f:dc:ad:ed:50:3e:6f:e8:
+                    ba:25:98:37:73:2c:30:cd:f3:d8:6e:5f:15:39:56:
+                    af:39:1f:2c:1c:ec:7a:9e:26:60:50:b2:32:77:0d:
+                    c2:29:7f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                EF:7F:FA:93:AA:EC:71:23:E1:76:D9:F1:BE:C7:25:D0:CC:4F:A4:F7
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        35:7c:9a:77:b8:01:43:dc:cd:7c:c6:52:02:48:d8:ba:20:10:
+        95:36:ee:f3:db:e2:67:d8:34:97:d8:2c:24:c5:56:88:13:68:
+        38:26:f0:91:29:2c:cb:f3:30:c3:56:57:2b:dd:a5:93:06:b4:
+        72:37:8e:01:d4:80:f7:c9:ea:ff:8c:4b:23:29:6a:3c:c5:6b:
+        04:3d:e5:93:5d:fb:bd:01:18:19:09:96:97:ee:63:61:6e:1d:
+        33:19:b0:9d:59:de:33:96:74:4b:4f:46:cb:7f:83:a2:6f:9f:
+        67:19:7a:d7:3b:94:28:f9:cc:9c:6a:52:ca:e8:ab:1c:53:5c:
+        4c:73:cd:55:97:bf:0b:75:b0:da:37:8f:10:6e:cd:77:72:cc:
+        d3:85:59:67:b7:7f:31:c5:07:18:83:de:fe:59:a2:c4:34:62:
+        15:ab:8b:49:e0:2e:9d:b9:16:a8:d4:3b:04:70:74:fc:aa:3c:
+        1f:97:41:01:82:f4:30:1e:6f:3c:51:43:77:47:2a:78:35:57:
+        bb:ff:a4:ef:b3:bc:b5:06:4e:1c:59:71:7e:5a:61:26:56:55:
+        9f:3b:f4:d5:9c:19:31:66:12:e7:f5:aa:1f:4e:eb:5f:2a:c8:
+        f7:3e:69:0d:5c:3c:3f:df:74:9c:fe:0b:8f:e1:32:c4:76:7e:
+        13:a3:95:34:2c:42:0d:37:41:9d:89:e9:c3:89:fd:77:37:f7:
+        b0:45:e7:a3:6d:69:00:31:9c:76:69:5f:4d:ed:cb:22:10:f9:
+        ba:ec:41:39:66:85:28:72:23:d0:03:b6:d9:04:0e:bb:25:cc:
+        4e:ea:84:e7:ff:2e:ab:67:d0:d0:21:c1:8f:83:f3:de:5a:9a:
+        b0:90:da:cc:a1:cc:c5:46:0c:0e:b4:69:ce:3d:ac:66:01:9f:
+        66:81:41:d8:47:65:53:7b:dc:21:f7:9d:1d:31:15:c2:c6:a5:
+        4d:23:cf:19:8e:0e:58:58:bd:18:75:c2:24:e4:18:a7:be:05:
+        49:9e:a0:8d:50:45:ad:8a:88:84:1f:f2:76:9f:7a:80:e6:82:
+        be:3d:f0:8c:6d:4f:1d:9d:a7:1e:ed:c5:aa:76:d9:82:bc:00:
+        b2:31:53:89:c1:89:e9:dc:a4:b9:21:4d:e4:4d:f3:60:b4:ab:
+        60:8c:f3:d0:2e:53:f5:18:f5:b1:1f:72:0a:93:7a:39:45:12:
+        18:71:31:b5:85:16:26:18:61:2a:c8:da:7d:f9:15:79:b9:c8:
+        8a:ac:77:81:e9:12:9c:8c:be:ef:4a:fd:96:e6:e6:f4:75:0f:
+        79:27:12:db:75:3f:93:89:1f:0d:85:d5:45:c4:b5:b5:63:1d:
+        b3:57:ec:33:75:db:15:af
+>>> Verifying kube-controller-manager.pem
+kube-controller-manager.pem: OK
+
+>>> kube-proxy.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0c:ab:c4:d6:3b:e1:d0:4a:6c:f7:50:bf:6f:4d:d1:c3:ec:63:c9:e3
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:kube-proxy
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b4:11:6c:3f:05:c9:39:af:92:5a:cf:cc:93:ad:
+                    19:85:b0:e5:a0:8d:d0:81:1c:6b:d2:80:f9:f4:ed:
+                    2d:c6:d3:08:2b:44:2c:69:f5:e2:c4:1b:8b:50:27:
+                    79:18:ca:fe:72:0f:d2:b4:64:21:0c:68:83:d1:08:
+                    31:19:b8:7a:62:6b:80:4e:fe:f0:e1:51:f3:46:47:
+                    ec:d6:ff:a7:c9:b3:ea:59:a1:0e:fb:08:a5:80:40:
+                    d3:af:e5:7d:68:11:ff:ea:b5:62:2e:65:4b:bd:b4:
+                    ae:5f:c8:ff:4c:72:b4:16:e8:f7:01:46:a8:8e:33:
+                    c4:dc:ac:b9:69:ac:93:fe:ef:0c:8a:18:a8:5c:ce:
+                    ab:dc:21:87:dc:b5:bd:99:21:0a:1d:bd:4c:10:47:
+                    f1:64:bb:48:5a:c6:e1:31:b5:04:ca:70:77:c9:a0:
+                    99:fe:c3:af:5f:ab:ae:a6:7e:4f:dd:f4:37:bb:94:
+                    2f:be:79:7c:1d:01:6a:0e:4d:64:97:78:a1:ad:19:
+                    4b:74:eb:ab:50:8f:c0:d2:4e:ba:e5:91:6d:bb:bb:
+                    48:27:df:42:88:bc:a3:50:f5:e2:8c:e3:7b:fe:81:
+                    38:df:54:a3:d6:89:15:2a:0b:63:58:7e:cd:80:9a:
+                    80:50:69:f9:f2:3e:38:1e:83:ab:c8:f6:11:4f:ee:
+                    f9:c5:ce:69:31:13:7b:31:a6:e0:b5:60:b4:f4:0a:
+                    0e:e3:ef:2e:31:8a:0a:cc:e7:fb:79:4b:ed:80:97:
+                    59:59:17:70:55:b4:9c:9d:50:2d:2e:69:53:a9:5a:
+                    4c:56:ac:46:43:56:28:9e:b2:0f:ca:c5:48:62:37:
+                    f0:90:5a:5a:bd:0a:0e:c0:84:56:ff:ae:a1:b0:21:
+                    42:2a:e2:a1:ad:d6:ef:11:f9:85:97:87:77:44:25:
+                    fa:f5:0a:41:f4:cf:88:57:6d:9f:0e:52:46:da:cc:
+                    be:b6:96:28:83:ec:01:2e:e1:bc:2c:ce:89:70:ef:
+                    52:a5:31:37:a4:cd:56:1c:4e:8a:e4:b1:07:d4:42:
+                    d2:fa:e8:95:7b:e7:ae:72:fa:74:d0:cd:95:56:e4:
+                    d5:cf:65:fa:b5:ee:19:eb:49:71:ff:7d:5f:4d:b5:
+                    e6:d9:b6:c4:2b:f7:eb:12:45:12:81:93:ad:6f:fd:
+                    1a:fc:cc:ff:e9:f0:ad:8e:53:6f:f0:24:f0:60:7a:
+                    09:15:cc:49:be:7c:68:03:ee:92:8c:6d:c8:39:7a:
+                    b7:be:fe:6c:74:09:35:d7:56:20:cf:a3:eb:ba:12:
+                    56:f4:0e:ef:d6:da:fc:be:48:ae:01:f6:51:c7:df:
+                    a8:4c:ec:98:3c:74:0d:40:48:ab:84:79:03:66:8d:
+                    ce:d9:e7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                7D:C4:30:98:CC:86:B0:A4:6B:A4:08:67:AC:72:DE:B7:25:F7:43:B5
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        57:a2:8a:0b:cb:18:19:8b:47:72:e4:a5:c5:78:76:81:bc:50:
+        c6:a3:19:e5:32:c4:b6:0d:eb:57:f2:4b:eb:2d:2a:7e:5f:f5:
+        a8:28:79:50:39:fb:82:2d:61:77:e8:23:6b:1c:44:6e:ae:d8:
+        c1:d4:8c:7d:37:70:43:89:1d:bd:53:3e:b2:3a:39:d1:bc:6f:
+        5e:05:d1:f7:12:8d:e9:bf:89:3b:e3:c3:14:de:75:a6:62:8b:
+        e0:30:86:01:c8:f8:93:f6:6d:09:25:7b:50:fb:fc:6c:28:22:
+        dc:82:1a:37:23:97:f4:bf:88:b1:46:41:93:68:25:b7:c1:d2:
+        90:6c:67:c6:ca:e1:9e:ab:ec:10:81:f2:e0:70:6d:60:01:f6:
+        31:ce:4f:5a:0d:a1:b8:78:97:9a:d6:57:ff:05:a9:1b:d5:a9:
+        b5:93:fc:56:8a:80:dc:41:b4:e2:22:1a:e7:fa:47:72:a8:4f:
+        b5:0d:28:75:4a:c3:98:a9:a5:82:c8:5d:2c:59:9a:77:dc:bc:
+        6f:b9:e9:c1:c2:20:dc:e1:f9:c7:49:d5:9d:0b:33:dc:47:7f:
+        28:15:35:83:ed:41:5d:f9:01:b1:8c:13:84:8e:0d:05:2f:77:
+        da:67:82:43:dd:36:8c:d6:2a:ee:e6:96:16:05:0c:92:92:1d:
+        33:18:3b:30:70:6c:05:2d:bd:1f:41:81:f1:71:bd:6a:0c:75:
+        6e:dc:d9:45:48:47:0c:d0:a7:40:5e:22:76:11:b3:fe:cb:c2:
+        d1:53:ed:d1:35:5c:97:10:54:bb:dc:4b:52:b5:12:ef:df:60:
+        48:98:97:89:60:04:f7:01:92:52:e7:71:fd:03:bd:38:5b:0d:
+        dc:8b:a5:e3:7c:d6:f4:c6:be:cb:10:63:22:88:71:0f:d0:0b:
+        6d:f3:f9:da:cd:b5:0e:34:44:b0:8a:dd:6d:10:25:a5:27:79:
+        de:f7:8b:ae:10:79:e8:0f:ef:5b:9c:2f:dc:1f:39:b6:37:33:
+        60:98:84:67:a6:fc:98:85:3a:e9:7d:83:f7:b8:e6:5e:d2:54:
+        e8:c5:d1:44:9d:2b:08:df:05:1b:11:ad:1f:f6:fa:57:00:5b:
+        47:3b:07:56:57:20:54:9c:16:a5:72:37:1c:52:65:9b:3f:48:
+        c2:3b:12:23:c0:2f:5c:53:2a:ec:a6:d8:e7:ce:87:da:aa:74:
+        19:d6:0f:5d:4e:0f:20:00:54:3d:33:c0:82:91:82:a1:46:7f:
+        a6:50:3c:25:c4:eb:d1:98:58:e2:ef:d0:cb:bc:a0:62:2c:cf:
+        90:e5:c8:59:ff:2b:c6:6e:f4:16:1d:06:df:a0:3e:ff:75:4b:
+        8d:cd:d7:a3:c4:d6:2b:7e
+>>> Verifying kube-proxy.pem
+kube-proxy.pem: OK
+
+>>> kubernetes.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            5d:13:f8:da:4d:1e:83:0a:18:8f:61:c3:f2:40:87:f3:b0:c4:82:e6
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=kubernetes
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:be:43:15:1a:4a:13:d1:96:c6:8c:05:a7:48:6e:
+                    1b:21:19:6d:0f:da:3e:2a:af:2b:fd:5d:fe:98:c7:
+                    c7:90:35:a7:76:2b:c3:32:6f:90:95:3f:9e:7b:aa:
+                    b5:a7:29:67:24:82:ad:32:72:95:cb:07:16:38:04:
+                    4e:ba:3b:0d:67:dd:23:10:be:08:99:16:f7:bc:fa:
+                    71:42:7a:16:3b:80:d3:6c:a4:6e:f5:de:cd:f3:aa:
+                    ed:14:40:3a:1d:e7:1d:8c:de:be:66:ec:01:2d:39:
+                    a7:8c:53:98:c5:23:18:73:ed:3e:9d:04:6e:2c:a5:
+                    bb:07:b3:c2:aa:9e:fc:e6:a1:c0:d3:b0:95:b4:60:
+                    f1:c0:c6:f6:ec:0e:9a:13:9c:78:39:fe:38:75:50:
+                    64:30:39:50:33:64:8d:0e:6e:a2:81:d4:58:fd:ff:
+                    17:0d:87:ed:0f:30:d1:eb:b6:77:de:4e:96:6f:30:
+                    6a:05:a0:15:4c:9b:12:0c:c9:43:ff:aa:f6:64:f9:
+                    0a:58:83:53:be:c0:e2:9d:58:fa:d2:8a:8f:56:e1:
+                    a9:d1:0a:71:34:09:00:a7:f4:22:e8:76:fa:a4:a8:
+                    0f:74:43:94:ef:48:6f:49:92:2f:33:9b:63:29:a4:
+                    be:42:4e:3a:c9:4a:64:f6:e7:18:31:d1:3e:3e:df:
+                    72:3a:ac:f2:60:6b:70:27:c3:eb:97:c4:22:11:a1:
+                    ef:69:08:0c:45:fe:80:4e:d6:be:e9:d0:ec:fd:6e:
+                    d9:91:41:00:9c:42:3e:94:54:1f:56:99:44:54:b2:
+                    2e:d9:90:eb:23:59:96:85:11:65:9e:77:9c:43:e6:
+                    fb:fe:fd:7a:41:89:23:61:8d:9a:02:07:c3:f0:47:
+                    5e:07:7c:e0:d3:a6:5e:df:9e:79:65:2e:58:a7:dd:
+                    34:06:96:c2:c4:02:a0:2e:32:91:73:73:56:f1:f0:
+                    58:fe:bf:c7:76:ca:18:ca:d3:6e:8d:b2:b8:c1:3b:
+                    88:bb:71:48:8a:d7:e6:1a:12:bb:1f:99:6f:65:fd:
+                    7a:dd:9d:9d:fc:5b:8b:d8:98:30:c8:ce:51:eb:39:
+                    74:4e:af:c9:ac:52:69:f2:1a:33:d5:33:0a:02:f3:
+                    4a:a0:56:43:0d:7e:bc:e3:d7:10:91:d3:c5:80:4d:
+                    be:b3:63:b7:e5:0b:a6:78:86:22:11:b6:7d:9e:f5:
+                    d8:9f:f0:e6:fc:e8:93:36:a9:28:f4:5a:52:2a:d9:
+                    96:f7:7b:2b:80:c4:b5:8b:b2:2e:97:93:62:ff:ff:
+                    2e:7b:d5:10:0d:8f:42:cc:1a:30:0e:19:a5:28:83:
+                    b9:83:68:28:2d:13:3b:cc:9f:5a:db:61:79:7b:52:
+                    b0:64:71
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                35:8C:5E:98:E1:F6:92:9A:2C:88:F5:6B:F8:2C:74:D3:D4:37:13:0A
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, DNS:kubernetes.kubenet, DNS:control0, DNS:control0.kubenet, DNS:control1, DNS:control1.kubenet, DNS:control2, DNS:control2.kubenet, IP Address:16.32.0.1, IP Address:10.16.254.254, IP Address:10.16.1.1, IP Address:10.16.1.2, IP Address:10.16.1.3, IP Address:127.0.0.1
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        3a:a0:dc:25:bb:d9:ef:8b:27:66:34:e9:5f:48:39:7c:88:7e:
+        4b:be:ee:8c:32:ca:44:d3:02:0f:c9:8f:eb:b6:af:11:fa:1c:
+        14:3c:dc:82:54:f0:ed:85:1f:16:d4:dd:6b:28:77:9c:db:7d:
+        36:4f:2b:5b:4e:99:5e:60:a9:02:8a:00:19:38:97:c1:f8:57:
+        a6:cd:32:82:14:0d:e5:99:27:e3:63:ac:b8:c9:b9:13:4b:50:
+        e2:24:78:45:8c:1a:7e:c5:1c:1f:f8:52:4a:03:ef:12:31:ee:
+        48:c4:8c:28:97:4a:6d:d3:fa:c4:ac:1b:20:11:66:1c:54:c4:
+        52:68:91:04:2c:1f:86:ee:1f:d0:fd:0f:fe:24:ab:32:d1:6c:
+        8b:6f:29:02:86:e0:a4:33:5d:a7:78:d7:0a:86:35:65:04:6a:
+        a0:b9:54:9c:53:44:3a:62:27:48:90:90:1c:79:d1:a1:07:bb:
+        01:d9:7a:45:8d:35:b8:78:cb:3b:7f:43:14:9f:3a:43:40:d4:
+        65:0c:7a:a4:d9:e4:f7:c2:02:e0:a8:19:2f:4a:97:59:6c:22:
+        71:ee:1c:bf:27:26:2d:f3:9b:ea:26:21:48:2e:53:79:0c:3f:
+        f2:ea:e5:e9:90:af:ac:ec:47:76:50:53:75:e4:56:0e:a5:92:
+        1e:00:d5:c3:33:f0:00:16:34:ef:2d:f1:47:50:46:50:3a:06:
+        e4:26:16:57:ab:b4:62:ef:82:e2:4a:40:c0:06:df:0b:74:cb:
+        a5:d9:22:77:4c:e9:6d:b8:ad:df:9f:9f:57:67:29:cc:c8:3d:
+        78:a5:0f:54:69:ef:ff:78:c1:8a:e2:37:12:60:17:9a:24:ca:
+        3f:68:87:e4:0a:c5:30:95:78:94:6f:fc:43:95:02:36:b0:72:
+        89:08:42:0d:96:eb:d0:c7:07:8e:79:ad:94:a8:a1:8e:b1:ed:
+        d9:0e:56:e7:4f:48:74:d2:f5:72:a4:9f:47:93:c8:34:48:e9:
+        2c:70:98:75:e8:75:2f:61:69:26:58:ac:66:2a:4e:06:e3:da:
+        4e:e6:8b:5f:60:22:5c:93:f1:e6:41:e1:e4:85:1e:0d:c1:32:
+        c1:72:b3:a3:ac:d9:a2:c6:c4:1c:2a:09:c5:9d:a2:91:91:0b:
+        9d:89:62:33:1c:6a:5a:83:87:33:5a:17:44:11:55:80:32:00:
+        65:56:1e:ac:33:aa:fb:a9:f7:0d:89:4f:97:b8:a4:c2:46:32:
+        78:ef:53:59:16:d4:bd:e8:f1:7d:36:39:53:d9:da:43:e3:09:
+        09:03:76:3e:f6:f0:0d:73:08:8d:0c:e1:18:eb:2d:aa:e9:a3:
+        22:bb:68:5b:35:7c:59:d5
+>>> Verifying kubernetes.pem
+kubernetes.pem: OK
+
+>>> kube-scheduler.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6b:1e:ee:08:c0:72:41:b9:07:95:d2:c3:30:ec:b0:0e:76:91:ef:c7
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:kube-scheduler
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:df:b9:6b:fe:f4:1b:d0:5e:9b:d8:db:6e:57:c5:
+                    52:bf:e1:85:44:9e:e3:8a:e5:f3:1b:e2:d3:10:d4:
+                    15:84:fd:32:b7:bc:c0:b5:28:3e:e7:bc:67:d2:c2:
+                    77:d6:87:31:34:db:f5:f1:78:ce:4c:99:06:15:2b:
+                    02:f8:06:a0:2f:b0:d3:82:f8:af:00:32:01:61:b0:
+                    3b:03:45:05:2e:5f:7b:7e:12:13:3d:b6:ff:da:70:
+                    98:2e:52:9e:3e:0c:8f:47:19:36:f0:d4:d8:2e:93:
+                    e1:a9:d2:f4:4f:93:d7:04:80:bc:dd:75:4f:41:67:
+                    9d:34:d5:15:ea:26:8d:96:71:93:b6:40:3d:a7:05:
+                    01:d9:37:7c:18:42:2e:a2:30:43:59:34:ae:20:5e:
+                    fc:3f:e8:63:f2:60:d6:76:3d:e3:92:b1:8f:b0:27:
+                    65:7a:cb:f9:02:61:b5:c6:72:27:a4:9e:9d:f6:87:
+                    eb:13:29:39:ca:43:c0:df:1d:f8:9c:42:f2:7e:23:
+                    3c:09:87:8a:d0:ff:0b:69:3e:e3:68:02:dc:f8:34:
+                    9e:b1:c8:d4:32:34:88:da:8a:88:23:2f:9e:20:09:
+                    55:ea:72:7f:b8:0b:d0:50:f9:ff:44:e9:2e:7b:09:
+                    54:47:3c:8b:da:25:81:39:e2:d8:8f:53:25:5f:9b:
+                    16:72:a5:b5:fe:90:26:c1:38:40:80:6f:07:0b:92:
+                    40:54:02:64:c5:14:bb:44:f0:34:c6:e6:71:2d:f7:
+                    a7:f6:86:82:70:3a:29:97:1d:7e:78:de:73:21:45:
+                    a3:0b:ff:4a:39:63:54:ee:02:37:c8:4e:dd:a6:21:
+                    43:82:0d:d9:d7:0c:cc:fc:31:92:eb:77:84:2a:77:
+                    7c:b5:b6:2d:e9:6a:a6:d9:2d:ba:f0:ab:4f:51:6e:
+                    fb:39:11:87:62:af:78:0e:c1:39:b9:a1:9d:2d:8f:
+                    de:f1:99:6e:49:fd:5a:8e:71:7b:62:f1:e7:cb:65:
+                    49:17:56:8f:f0:83:3b:45:47:bd:8b:fd:69:92:70:
+                    c0:2f:23:b8:48:e9:4e:0d:47:c3:81:a8:3f:82:1b:
+                    79:08:4d:df:8f:fb:10:d3:37:5d:45:47:e8:11:1f:
+                    39:0e:57:5c:22:84:22:67:48:32:30:3e:bc:7e:99:
+                    3c:77:28:63:77:67:49:bf:5b:5a:b9:89:97:b4:7f:
+                    4b:ae:12:a3:98:99:7d:74:b7:51:f5:49:ec:39:2f:
+                    24:7a:24:fb:a8:7f:df:ce:60:0b:57:bd:cf:1a:02:
+                    f5:91:70:60:09:fb:bf:7e:1a:54:6b:e9:8d:5b:2b:
+                    f0:37:0f:0d:4c:a5:d8:ff:75:e4:a9:82:77:bb:0d:
+                    e3:d4:51
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                22:5E:F2:33:05:8B:03:3B:4E:3F:2C:7A:B3:05:D8:1E:51:BB:DF:1B
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        a5:62:45:14:b9:9b:96:4c:47:08:fc:af:84:d7:0a:0e:02:68:
+        15:04:6e:7d:b0:7c:9d:4d:b5:11:a2:c4:d2:df:72:5a:7c:49:
+        77:60:1d:27:2e:be:e6:b5:bb:4b:77:8b:c0:ee:9a:1c:aa:8f:
+        f0:2b:22:88:0b:ff:df:05:7d:38:ad:f3:67:bd:42:48:f2:4d:
+        2f:eb:54:6c:1a:3c:16:e6:80:2c:82:91:21:02:8c:d3:8c:fb:
+        1f:a8:c1:2a:39:04:d6:61:31:42:31:e5:73:25:a1:28:12:a7:
+        0c:2c:3d:7a:8c:7c:55:a6:1c:6e:f1:d4:11:f5:63:25:f8:bd:
+        0f:46:86:84:81:e6:a5:57:41:93:74:92:32:5d:b7:3f:0a:68:
+        ee:d3:a1:a7:75:80:f2:28:f2:d7:56:28:96:1f:80:33:e6:16:
+        02:d8:92:e0:b1:e7:ec:db:8f:4c:09:38:86:42:0b:ab:b0:a3:
+        4d:8d:c5:9c:2c:a0:93:53:b8:53:cb:f8:71:ef:a8:20:62:5d:
+        78:4a:9c:7c:7d:56:62:23:64:8f:eb:84:23:42:08:69:a0:d9:
+        a7:6d:a6:03:db:84:50:3b:56:66:0f:44:9a:3a:39:f2:4b:95:
+        50:8a:93:32:9e:1e:93:7f:ad:8f:e5:10:12:eb:06:83:9c:c7:
+        b4:a5:cb:0f:0c:12:a3:33:93:84:31:c2:a3:58:96:e0:64:c8:
+        d5:df:e4:15:52:41:eb:46:14:9f:e4:63:fb:0e:f6:e2:64:4a:
+        41:61:a2:85:5e:3e:31:ce:04:f6:e8:c8:d2:71:1a:85:99:e8:
+        ed:e2:1e:8a:b1:45:ee:03:97:3e:31:34:2f:17:71:22:8b:16:
+        dc:e3:0a:f3:5f:e4:85:eb:1a:b1:d5:bb:60:5f:ac:2f:ab:16:
+        23:fa:c0:71:81:7b:f0:37:80:49:cc:f1:09:37:b1:4d:3a:43:
+        2f:e6:d2:04:54:3d:02:c5:aa:09:06:c7:94:a1:84:e9:ff:08:
+        01:39:b8:94:df:c3:85:ca:e7:d7:e6:23:60:1e:1e:6c:ee:c8:
+        da:be:dd:e2:94:8b:ea:97:49:b5:2a:e8:09:b5:d8:9b:c6:db:
+        1a:f2:4d:06:74:89:2f:52:02:1d:11:ce:05:84:61:6f:0f:d7:
+        8e:57:88:b2:28:76:60:13:b8:f8:da:2a:2e:e8:b6:15:2d:0d:
+        0d:ca:44:57:3b:8d:7d:f9:31:b4:5f:1d:53:99:ff:b9:c8:68:
+        a2:3d:aa:63:75:83:7c:82:fb:13:e2:be:2b:b0:d7:9a:ae:bb:
+        30:ef:f7:12:4d:f6:83:13:41:01:97:dd:55:c8:55:17:2e:2d:
+        81:cb:c9:49:b4:ac:79:21
+>>> Verifying kube-scheduler.pem
+kube-scheduler.pem: OK
+
+>>> service-account.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0d:49:79:51:38:4d:55:6f:39:59:ee:31:ad:8c:d9:99:c1:16:0f:f5
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=service-accounts
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:a7:a5:9d:0f:44:79:44:c2:a0:c7:56:06:e4:57:
+                    a7:83:8a:9b:a0:3f:2e:93:36:b7:50:a2:31:a1:fe:
+                    69:af:77:cd:59:48:51:2b:3f:0f:2a:75:76:a6:ee:
+                    b4:b0:72:03:03:b5:81:3d:9f:45:b2:40:93:4c:06:
+                    33:44:d0:8e:40:cc:5f:94:78:c2:86:87:86:23:ae:
+                    7e:25:17:87:ac:b0:8b:f7:78:6c:cd:45:1c:05:c8:
+                    12:7f:4c:17:ad:30:6c:b4:95:40:8a:ca:ab:ae:c8:
+                    65:15:51:77:dd:fd:a3:a6:a0:71:bb:0a:d6:ab:c3:
+                    6c:d2:b9:93:31:29:10:26:e2:bd:f8:7b:f2:9e:78:
+                    d4:67:0a:34:a7:16:87:cc:64:47:65:f5:2b:49:b4:
+                    3f:d3:26:e6:75:fb:1c:4a:63:be:7f:d2:86:ae:b4:
+                    76:88:c3:f6:b8:4b:a7:63:d5:0e:79:fb:b6:73:b6:
+                    9e:84:85:d8:09:ed:0b:4c:b5:38:8a:0a:7e:71:ad:
+                    98:dc:0c:94:38:f8:fc:a5:62:e2:ac:3b:41:21:26:
+                    a1:43:ff:d0:61:54:d4:5c:cd:a4:b9:06:b5:80:94:
+                    20:24:4e:4e:37:31:cc:f6:81:ac:17:a8:18:93:46:
+                    dd:80:cb:0a:0b:8d:5d:75:41:5c:e3:4a:d5:37:e1:
+                    f5:59:84:80:a9:2c:08:16:ca:6e:63:ea:43:45:a6:
+                    a5:fe:ac:72:52:7f:f1:a1:5b:6b:a5:1a:0e:f4:14:
+                    8f:ae:fc:85:0d:0c:c4:d3:b1:52:72:53:d6:69:f3:
+                    16:96:4a:60:af:c8:31:b0:ed:ac:0f:3a:e6:70:30:
+                    1b:d1:c8:cb:f3:bd:4f:ac:ac:9b:c1:00:68:6e:0c:
+                    88:83:10:bc:2a:8a:06:4c:33:9d:08:03:3d:c0:cf:
+                    0b:83:41:83:48:b8:7f:a4:ca:32:3e:8b:79:e2:76:
+                    f2:80:48:34:6e:67:f6:64:95:f7:ab:f7:15:33:aa:
+                    5a:62:16:d9:12:58:1a:d9:f1:78:09:47:8e:49:20:
+                    70:3f:69:10:2c:59:f6:d6:ad:b2:18:8f:13:28:83:
+                    a2:39:2d:0c:05:2c:b4:74:7d:b5:e8:80:88:84:b1:
+                    ce:4f:3d:86:e6:03:e7:eb:aa:88:47:1f:89:af:b4:
+                    9a:2a:4b:81:c0:ed:da:ca:91:71:13:67:61:31:48:
+                    74:71:2f:02:1f:ad:e3:73:fd:32:66:17:6a:6c:ad:
+                    ca:c7:57:36:c8:d8:cd:3d:a9:47:0d:8c:4f:49:67:
+                    58:b6:59:49:90:bd:15:11:a7:3b:1f:d3:3c:29:26:
+                    b2:f9:7e:86:06:f1:dd:af:58:e5:70:cf:7e:62:46:
+                    35:2e:6f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                BC:A7:27:7B:11:9B:CF:6D:2A:45:17:CD:B6:32:84:78:9D:64:B6:3E
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        a0:d4:00:45:80:36:47:73:05:54:b9:4e:cf:a7:c7:96:a4:7b:
+        c9:95:74:b9:5a:cd:5a:52:07:ba:10:10:d6:57:4d:58:49:fe:
+        2c:82:3c:34:eb:e6:bf:b7:27:ea:8d:44:46:19:3a:b1:ac:11:
+        e0:fc:25:1d:1c:97:49:25:0f:80:96:3a:de:8b:bc:08:de:f6:
+        fa:2c:75:2a:a8:8a:a7:08:49:37:05:38:76:e7:ee:70:94:c7:
+        dc:7d:c8:2b:f8:34:97:ad:3a:1b:d6:cf:1c:a3:7d:61:b6:19:
+        0c:51:4a:a8:56:37:ea:eb:ec:02:f1:cc:73:c9:d5:71:dc:01:
+        c1:30:63:4e:32:5c:b9:81:ad:f7:2e:97:a5:ed:7b:a7:b6:04:
+        07:90:0b:8c:df:06:d9:76:41:f7:47:1c:7e:9a:89:09:e2:eb:
+        d5:57:ae:18:28:d1:39:62:df:14:e0:1f:a6:b6:13:f6:4b:a5:
+        b2:49:a2:07:19:9d:d3:77:73:b0:e4:0d:7c:6b:15:62:9a:24:
+        d5:43:db:82:4b:18:e9:69:a6:00:29:4e:0e:97:70:86:31:ef:
+        8d:87:52:ee:9c:9e:c9:e9:4e:e2:98:eb:46:a9:44:fe:7c:a6:
+        0a:c9:d8:6e:cb:57:c3:00:2b:db:d8:da:43:a5:07:85:86:aa:
+        fe:08:fe:b4:7f:71:b2:2e:92:84:47:de:e6:70:d3:71:c7:98:
+        b1:ed:f1:71:a3:79:a9:a3:71:f1:e6:e9:38:2d:9b:00:9c:be:
+        4a:cd:f2:70:8a:17:57:0a:ab:55:a3:72:f5:61:2a:5b:4a:b0:
+        03:a0:20:2f:7b:51:97:24:af:0d:ef:ba:da:66:b0:d9:47:66:
+        e0:4d:50:4a:9e:1c:e9:81:35:d2:8a:67:94:8b:17:fa:2e:f3:
+        2c:4d:b3:c0:37:6e:0e:73:dd:b6:df:6c:7a:d9:78:28:5e:ae:
+        18:67:7e:9a:b0:65:89:c2:32:51:a5:2a:ea:20:9c:f4:a7:17:
+        5c:1a:fa:d8:ab:98:4c:7c:d3:c1:27:87:8c:da:78:c0:23:b6:
+        14:18:ea:af:29:8e:6b:5d:8c:2e:dc:ad:10:b7:db:f2:b9:71:
+        d4:9d:4e:5c:5e:83:55:8e:0b:df:a1:86:ac:28:8d:c3:5f:46:
+        50:62:78:51:4c:bf:1f:ac:7c:0d:20:39:a2:b5:96:28:52:d1:
+        84:b4:d3:1e:3e:76:94:5a:41:28:e8:52:94:9b:41:0e:38:d9:
+        e4:bb:4a:9f:93:71:23:13:39:32:f5:58:83:cc:3c:0e:f0:46:
+        99:a2:2c:93:18:f7:cd:d0:f2:de:40:1b:5b:3e:71:bf:3c:a0:
+        62:7b:4c:fa:ac:46:21:bb
+>>> Verifying service-account.pem
+service-account.pem: OK
+
+>>> worker0.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            3e:33:d7:2f:0b:c0:0a:51:f1:9c:72:1a:7c:56:c9:74:1c:59:83:f1
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:worker0
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:e9:72:d3:4d:05:8b:ef:f3:9e:f6:4d:f0:f5:41:
+                    e4:0a:24:a0:d8:23:7e:d8:8d:cb:f0:36:e0:bd:88:
+                    c8:58:71:01:9d:31:da:69:a2:e2:50:6d:17:03:52:
+                    92:5a:10:23:99:ff:6f:53:7e:af:6c:f9:a7:4e:f8:
+                    21:64:a3:a9:4f:e7:ad:13:2b:79:e1:b6:52:52:f2:
+                    74:00:8a:3e:10:10:9e:57:fd:30:82:98:c1:54:74:
+                    f2:cd:d1:7d:ed:6f:ce:5f:54:09:91:17:ac:2a:28:
+                    64:5a:92:af:55:41:1f:98:ec:32:a3:ac:3f:57:26:
+                    93:ea:6f:d0:fa:94:4d:7f:e6:0d:2e:11:18:cd:48:
+                    10:cf:3b:69:06:7c:2d:4f:36:88:03:b8:3a:36:f4:
+                    2f:3b:6c:52:3c:6f:90:cb:73:ba:d6:d8:5b:e5:e7:
+                    06:ea:5d:37:1b:1f:a8:59:e8:60:e2:03:f7:f8:f2:
+                    a4:e6:4c:85:cc:ed:1f:cb:52:00:6f:0e:22:d7:0c:
+                    17:0e:65:78:b5:bd:95:0d:c5:0d:92:7b:e4:31:55:
+                    d4:71:be:d4:65:44:cf:80:29:21:12:06:6d:c3:73:
+                    a3:40:e2:be:e8:a2:c8:44:d3:19:8b:fd:bf:b8:4e:
+                    d4:a6:47:fa:a4:16:67:f7:6f:4f:8f:d8:56:97:c0:
+                    4f:e9:d4:fb:55:7b:44:67:7a:54:d8:ce:c0:c8:14:
+                    11:0b:a1:b8:9d:68:a1:5b:b2:4e:87:4b:2e:35:58:
+                    b8:63:ea:32:6e:cd:ba:5d:a4:6f:40:ea:84:02:72:
+                    93:70:67:1a:b5:b1:39:67:c1:f6:90:18:1e:14:4f:
+                    27:0a:42:48:38:4c:0e:75:0c:5f:10:c5:f3:79:2f:
+                    86:a4:3a:22:00:d3:f6:c2:1c:2c:12:4f:13:65:6f:
+                    ce:09:7f:a0:11:90:92:3e:8f:b8:cb:3d:8c:2a:d5:
+                    7d:c8:c9:65:d1:23:bc:93:c7:90:2a:00:d2:f5:4f:
+                    0b:f6:99:27:7a:25:9d:80:4b:01:31:74:85:39:a1:
+                    7f:f3:2f:08:45:a2:03:a9:81:50:99:44:7f:b1:e2:
+                    33:97:55:57:54:6c:e4:c5:1f:f1:7c:47:17:67:ab:
+                    94:f2:90:a7:96:9f:67:0e:97:7d:fc:e0:54:e3:79:
+                    95:ee:d7:e6:e4:d0:32:45:17:cf:17:b1:94:77:1d:
+                    71:a7:3b:7f:ce:74:52:54:dc:cb:1d:ab:0e:b9:78:
+                    66:fd:14:80:5b:65:2b:32:c1:fb:04:22:be:16:3a:
+                    b2:61:eb:08:cc:f5:bb:a8:b4:17:7a:09:39:1b:14:
+                    b5:0f:0e:e3:e0:b0:9a:b2:92:9c:47:1b:5a:84:6d:
+                    84:f7:85
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                32:B1:3D:22:6A:D4:62:F4:27:FB:7C:ED:A3:A3:44:96:C5:15:05:75
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:worker0, DNS:worker0.kubenet, IP Address:10.16.2.1
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        15:2c:1e:fa:8d:c0:63:bf:c1:71:bd:16:ab:34:ec:51:db:84:
+        21:35:46:d2:fa:54:28:ea:0f:5c:ea:c7:5b:56:db:83:30:82:
+        21:80:08:49:9a:a6:fb:67:96:e2:8c:26:08:73:e6:b6:bb:2d:
+        13:0a:11:56:2e:1c:b9:ef:ad:7e:1c:c2:19:11:de:fa:0e:af:
+        c8:69:98:8f:62:ec:86:56:62:3f:2b:f4:1b:5b:e9:e1:d2:0f:
+        48:87:e9:a5:95:d8:94:4c:8c:90:dd:13:8e:89:38:c5:65:c0:
+        93:d1:4d:be:a5:22:7a:04:16:98:d5:b1:ac:55:e0:2d:b9:12:
+        ad:da:cd:21:5a:48:ab:3e:a2:21:51:6b:ce:7f:2c:92:33:cd:
+        ca:ff:d9:c1:4a:66:a1:ee:d0:f6:56:39:61:b7:66:fe:d8:b0:
+        57:75:4f:19:0c:45:44:87:42:6d:a3:e1:96:42:b3:eb:b1:ce:
+        8d:11:8a:f4:30:ed:8e:1c:9c:a3:56:e4:4c:66:30:2b:d7:c8:
+        a3:69:45:16:8d:69:60:4f:84:47:e9:e7:26:69:40:29:5e:e8:
+        b7:a5:e4:20:1e:5e:36:94:c3:18:d2:64:7c:c2:2f:1a:00:50:
+        a6:56:c9:4e:69:4a:0a:27:84:7c:0d:74:06:d1:68:c4:55:45:
+        07:21:02:0b:b2:ac:00:92:7f:14:3f:bf:b3:37:70:2e:41:8b:
+        ce:67:77:ca:f3:dd:b7:3d:c9:b7:73:f9:c5:9f:2b:ef:f4:f0:
+        35:b8:0f:91:ae:6d:b1:67:45:cd:1a:c3:5b:fc:c6:a1:fd:23:
+        1e:e5:0b:6c:f0:7e:82:01:16:cb:f8:7e:b1:c4:c7:2b:ba:4d:
+        27:87:81:50:51:39:d5:4d:b3:f0:7c:cd:49:de:b6:6d:b4:08:
+        92:ef:8e:c7:9b:c8:98:aa:aa:fd:2e:09:f8:eb:3e:7a:d9:bd:
+        58:9e:7f:c1:fe:9c:e9:d1:23:b0:cf:ea:f3:93:af:23:6c:d2:
+        ca:d7:9f:cb:e6:36:47:6f:e6:66:84:81:37:98:78:3e:85:be:
+        b0:a4:b3:45:9a:1b:26:b7:2c:17:f0:4e:bb:54:a7:7a:66:25:
+        2f:59:1f:a3:8d:53:ce:d7:f9:90:89:b7:15:84:f9:71:4b:41:
+        d6:cb:65:17:f6:59:a0:9b:9d:04:1f:2c:b0:99:5b:ef:d3:a3:
+        c0:b3:0b:32:e2:4e:90:59:9b:78:0e:c1:82:06:0d:24:1e:41:
+        9f:9a:5e:ca:a5:94:73:bb:44:75:49:eb:c1:3f:d1:1f:87:92:
+        67:3a:29:7e:a6:b2:ac:ee:9b:e7:e0:87:36:5d:b4:fb:51:b6:
+        46:0e:05:77:b9:43:e3:d0
+>>> Verifying worker0.pem
+worker0.pem: OK
+
+>>> worker1.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            46:0c:0a:ea:4f:e8:f9:81:24:9c:f3:fb:52:ee:39:db:08:cc:a9:a3
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:worker1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:e9:20:2e:ac:41:9a:91:96:8c:3d:e4:ad:6c:a5:
+                    a5:ed:8e:0d:b9:a6:7b:f8:ae:6e:c7:32:bc:2e:b5:
+                    46:ff:98:5e:3b:aa:b5:cc:8c:11:80:61:4d:de:f3:
+                    17:75:40:50:df:0a:f2:1f:64:7a:b9:d3:4d:68:2a:
+                    45:3f:26:ee:9c:d6:09:23:88:0f:fe:67:d3:3a:f6:
+                    65:47:2c:b0:d5:77:ff:b9:4d:44:3a:13:6d:f6:ce:
+                    76:10:38:80:e3:73:01:64:db:8a:bf:8c:44:fb:85:
+                    a8:5e:c7:5d:1f:84:73:b1:4d:55:e5:7c:66:85:aa:
+                    07:eb:bc:0d:28:90:ad:e5:10:ba:c9:8d:5f:ba:52:
+                    d7:65:f8:2f:38:a7:44:b1:85:5c:cd:68:14:10:b8:
+                    d6:c7:f9:98:5f:cb:99:f4:72:62:2e:85:50:14:5e:
+                    cc:80:c1:0f:81:92:08:17:9d:42:dd:d7:69:96:34:
+                    9d:fa:b6:be:fb:ac:c0:89:96:e5:ee:41:73:09:0b:
+                    d5:1e:aa:9e:2a:f8:3d:6a:5b:5c:b2:51:2b:1c:26:
+                    f9:67:ad:8d:71:ec:b5:85:b5:2b:c1:24:04:8b:25:
+                    f4:d8:e4:70:1f:26:7c:40:61:5f:22:18:09:fd:00:
+                    cc:d5:3f:0c:f3:b1:bf:e9:8d:1f:f9:b6:26:67:75:
+                    31:a9:b1:bd:50:43:7d:a6:95:52:29:4d:6f:a2:91:
+                    32:b0:13:80:c9:92:1a:5e:a1:59:6e:bb:1a:8a:8a:
+                    6a:a0:6d:c5:e3:ab:0c:f0:69:d6:71:f6:0f:7a:92:
+                    cf:05:1c:d0:af:81:37:3f:cf:89:04:0e:fb:c0:ca:
+                    79:ff:b0:b3:40:7c:d3:89:58:b5:9f:eb:ea:6e:79:
+                    d3:e7:07:b3:77:78:19:76:2e:14:c3:7e:2c:75:a4:
+                    75:cc:7b:d1:6f:22:76:8d:12:9a:e5:f9:eb:f0:6a:
+                    83:fb:33:18:7f:6f:21:33:c3:09:78:fb:6c:9e:b8:
+                    f2:33:0b:78:fb:04:2b:75:09:e4:c6:3c:96:35:e1:
+                    a2:aa:36:ae:a1:7e:dc:e0:a5:eb:e3:c4:bf:48:3d:
+                    1e:6a:98:d6:c7:c4:f7:20:ee:8f:7b:b0:c9:bb:ee:
+                    bb:62:28:bc:38:e0:a6:d4:18:f2:41:4d:50:33:c8:
+                    9f:c4:d4:60:76:f8:48:49:13:bf:21:f4:29:78:06:
+                    cf:72:7b:a7:47:ef:99:6b:86:d9:95:0b:83:91:87:
+                    7d:bf:4e:30:3f:ba:af:79:98:3b:81:a7:71:28:1d:
+                    35:5c:76:46:54:af:ab:97:db:80:b5:97:ff:40:56:
+                    93:3d:9c:c9:48:55:3a:6c:b9:78:74:79:7a:04:29:
+                    1a:fc:03
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                AD:FB:C4:61:40:A9:13:88:ED:EE:77:2E:A1:80:77:66:E6:13:1D:38
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:worker1, DNS:worker1.kubenet, IP Address:10.16.2.2
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        2e:a3:80:d2:2a:6a:6c:69:5d:91:5e:65:0a:af:b9:24:02:87:
+        7a:1a:49:33:3b:3f:4a:cc:99:05:31:dc:4f:c4:5c:c7:bb:ad:
+        68:53:ed:d6:c4:a9:af:be:ff:f8:86:d9:29:f8:95:a1:37:3b:
+        04:6c:71:c8:16:87:d4:90:3e:49:1c:8f:c2:cc:cc:af:e1:93:
+        7c:92:af:a2:08:7d:e8:6d:d3:71:20:06:b8:4d:2d:5e:e9:61:
+        9e:f6:21:b9:00:de:dc:b9:e0:57:5b:14:54:85:8d:ca:84:b0:
+        c4:01:4f:aa:12:76:85:72:07:99:5d:01:60:42:7a:68:d5:29:
+        55:1a:a6:2e:9c:d3:f8:1c:d5:ea:c0:b4:e2:cd:12:55:bf:7d:
+        dd:a2:2b:eb:40:84:78:e1:95:b1:79:85:49:04:8a:a9:c4:9f:
+        d4:66:94:5b:cc:72:8f:01:bf:7f:f7:bc:db:c5:b6:1c:3e:6b:
+        a3:af:2e:7f:19:b8:7d:0d:d4:a0:be:2d:be:b9:78:1b:d2:23:
+        84:a3:8f:e7:e8:be:aa:3a:62:5c:c9:c1:35:af:08:6b:9d:4e:
+        eb:5c:48:60:f8:39:42:44:6b:30:bf:5b:f2:d4:c5:ca:24:04:
+        56:15:10:71:19:7e:89:ab:d3:03:6e:41:11:61:6f:5e:af:24:
+        ad:b4:2c:70:18:27:f8:50:b8:08:c1:70:96:fd:4a:43:b1:97:
+        1c:a2:e5:dc:4e:8c:7e:fc:0c:b8:8d:31:db:7b:28:2f:e6:99:
+        2f:bc:24:80:97:e0:c6:33:f1:68:c2:5a:e4:56:98:fb:fd:7c:
+        71:92:15:9e:1d:54:ae:42:0a:a1:fd:f9:79:21:9b:11:70:1e:
+        84:c1:a3:5c:42:17:76:2e:9a:05:af:d3:86:68:1f:27:46:97:
+        48:b5:4f:c6:ab:52:78:30:14:25:fb:18:83:a9:08:4f:b5:e1:
+        94:3e:35:a8:0a:00:cf:f3:41:90:c0:95:be:9a:34:b8:5f:db:
+        93:58:cf:cd:cd:c6:51:b5:e6:84:37:b3:30:93:49:14:9d:0a:
+        05:bc:48:e0:b7:f7:03:93:23:1a:6e:d1:76:6d:76:26:b4:32:
+        57:38:36:00:88:55:68:16:95:92:7b:3f:0c:b1:89:f4:34:40:
+        4b:a3:50:eb:6f:7c:01:f5:d8:10:fe:82:de:71:ff:b5:44:c7:
+        0c:70:89:59:f4:2a:f1:4d:ea:65:88:e1:25:5b:6e:bf:67:1c:
+        73:15:a1:03:f0:3e:72:ce:3b:7c:94:ff:38:a3:f5:08:5f:86:
+        c7:b6:be:fc:23:a0:96:1c:de:cd:76:8d:1f:c3:4c:32:c8:17:
+        8d:d4:cc:08:1a:32:a8:59
+>>> Verifying worker1.pem
+worker1.pem: OK
+
+>>> worker2.pem
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            67:6f:a4:56:de:7b:73:03:6f:c5:cd:f4:7d:4d:00:b0:87:67:9d:79
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=Kubernetes
+        Validity
+            Not Before: Aug  3 16:04:00 2025 GMT
+            Not After : Aug  1 16:04:00 2035 GMT
+        Subject: C=FR, ST=Rhone, L=Lyon, O=Kubernetes, OU=kubenet, CN=system:node:worker2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b1:41:01:f0:ca:74:9f:4a:02:55:57:51:f2:22:
+                    b1:cd:f0:fc:51:de:20:ae:9c:b6:2e:e1:da:d2:1b:
+                    16:47:2a:5f:77:9b:40:33:1d:a8:7e:da:04:40:fe:
+                    04:ce:a3:ff:3f:24:a0:f7:72:ff:40:a4:d3:49:0c:
+                    03:dd:10:2b:4c:ee:dd:8c:89:82:6e:e0:82:fd:c2:
+                    97:69:36:81:6b:cb:b1:74:ab:8a:44:5d:c0:06:19:
+                    a4:df:a4:b5:de:94:75:f9:5c:2d:f5:dc:29:52:8d:
+                    31:7c:12:75:4e:2c:75:81:90:8d:7d:ee:33:43:ad:
+                    1e:14:37:87:52:56:01:6d:b2:ec:1b:17:75:5f:73:
+                    57:bc:ea:b9:cb:63:d8:23:e5:81:63:5a:98:08:33:
+                    3c:8a:e7:f0:9e:83:47:0f:db:72:d1:b5:3b:a4:60:
+                    8e:3a:e4:ae:34:cc:e2:36:0b:56:86:30:73:ad:42:
+                    1c:d5:ce:5f:26:89:c9:3f:20:43:43:fc:c3:c8:e6:
+                    79:91:f0:08:00:70:82:e4:47:2b:50:ac:8e:e5:24:
+                    d6:08:27:00:cb:51:d2:15:3b:89:c9:ea:b1:a5:4a:
+                    1d:cb:3f:72:e9:b4:83:79:13:a4:09:4f:1f:8a:e2:
+                    d7:8b:89:78:3e:ab:6b:6d:0b:96:7f:2f:27:87:0d:
+                    01:8b:80:1e:fd:24:e5:05:b2:e2:a1:3e:df:05:d8:
+                    55:01:3a:6c:c7:4a:38:3b:d8:52:b6:dd:e5:6d:8b:
+                    59:e4:4e:0c:2c:cc:4f:c0:fd:3c:97:96:f7:33:8e:
+                    d5:f1:f2:d3:cf:cb:4e:15:41:53:69:83:ed:52:7b:
+                    da:c3:9a:6a:66:04:9e:47:2e:58:d8:a4:03:2d:ea:
+                    25:11:8f:bd:53:01:0c:e8:6a:6b:29:a1:ca:e9:9e:
+                    af:6b:51:16:85:5a:ec:9e:27:db:ce:a7:43:b1:e7:
+                    16:8e:aa:d8:47:96:1c:f3:c5:9b:32:f0:03:b7:e1:
+                    89:2d:a6:ee:da:ac:df:48:96:18:5d:53:e1:5a:af:
+                    b1:ba:c4:89:0a:99:06:8e:b0:b8:a2:b4:4f:dd:7f:
+                    43:11:e6:f6:92:f8:f0:52:6d:2a:88:e8:e0:e3:f6:
+                    09:cf:55:d6:43:be:5a:e0:5d:71:f1:1f:54:16:35:
+                    d4:e7:da:ca:fb:76:25:6e:0a:a5:ad:3a:30:b9:14:
+                    1c:62:95:b6:36:79:58:3a:e2:05:a4:93:51:25:56:
+                    8e:c0:0b:02:46:85:50:5e:f5:e4:f3:99:43:9b:8c:
+                    7a:b5:d1:33:87:9b:73:3e:de:ed:02:1f:ed:38:53:
+                    67:57:ec:99:08:c4:8b:83:86:ed:9b:25:cb:d6:df:
+                    13:94:7b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                A7:1F:BD:6E:AE:84:30:2F:B0:FB:37:93:7D:FF:1F:DF:14:74:76:8E
+            X509v3 Authority Key Identifier: 
+                4E:DC:C6:C2:8A:CF:2B:0D:A7:F0:57:81:E5:98:3B:4C:0E:A0:28:73
+            X509v3 Subject Alternative Name: 
+                DNS:worker2, DNS:worker2.kubenet, IP Address:10.16.2.3
+    Signature Algorithm: sha512WithRSAEncryption
+    Signature Value:
+        52:c4:0c:f7:3b:f7:78:64:04:24:08:f6:10:c8:f0:f5:7f:1e:
+        60:8f:a4:9f:86:6c:24:17:1b:f8:c7:20:a9:d5:4a:b9:8d:81:
+        c4:c5:11:b1:5f:92:51:8f:4b:96:a9:d6:7b:fe:ca:b0:67:55:
+        03:02:b2:7d:04:34:a2:4a:08:32:d5:52:05:5d:a8:3c:65:e5:
+        f7:1c:a6:ee:39:fe:4c:23:07:cd:87:36:47:25:17:69:65:8d:
+        13:a7:75:5a:66:62:44:f4:cb:3d:29:ca:f8:cb:87:31:d9:06:
+        8a:99:0a:a4:ad:66:51:f9:88:d2:2b:89:a9:ef:e0:af:72:30:
+        fe:a9:11:f4:0a:23:6b:82:fe:57:7b:27:b9:58:66:f4:05:0b:
+        57:3d:a7:0c:74:cc:30:e6:da:1e:fc:b8:e5:ab:bb:21:36:c8:
+        34:3a:cc:71:b3:54:6d:66:07:5c:b4:53:bc:43:90:93:53:0c:
+        03:18:bd:00:a2:29:d7:49:33:ea:f0:b7:5e:9a:b5:5f:d4:20:
+        42:07:dd:b7:51:13:27:a3:f5:ab:86:71:b0:c3:82:b1:19:8b:
+        e3:54:97:d7:da:3a:72:6e:ba:92:e5:89:f0:b4:b9:28:bd:dd:
+        fa:28:af:c4:11:88:6a:0f:55:69:d5:c1:89:aa:78:cb:bb:a8:
+        af:d2:98:f3:f5:90:ba:47:1c:65:a1:6e:5e:98:60:3d:42:ce:
+        0d:7c:16:2c:82:e8:aa:1a:9f:10:be:e1:74:2a:33:07:90:8e:
+        49:34:26:06:42:f9:9c:1f:99:9f:dd:f1:ad:32:b3:a7:f2:1d:
+        14:72:31:bc:96:d2:b8:38:32:55:25:a6:8c:e2:b4:5f:9a:d5:
+        2a:09:f8:d3:15:c7:3b:c7:d8:72:36:6c:51:c0:2b:c4:27:55:
+        79:79:66:42:7c:21:8f:dd:63:34:b0:d0:22:54:57:76:26:ef:
+        fe:90:3b:c1:85:7c:f6:4d:21:ed:15:53:38:28:5d:83:9f:90:
+        0a:de:7a:da:df:60:7f:2f:5f:10:3b:aa:98:97:39:2d:6f:7a:
+        a6:9c:73:11:21:eb:a0:7a:72:a6:11:70:af:13:e0:1a:94:f5:
+        b4:7f:67:90:0a:2c:74:7a:e4:1a:67:02:f8:8b:3a:c8:79:6d:
+        45:dd:51:2b:0d:d0:83:fc:23:e3:8f:e4:69:4e:49:ee:67:84:
+        35:8f:c4:49:fd:09:79:35:13:42:39:a8:98:20:fb:b8:4a:f2:
+        ec:fb:80:55:22:00:27:07:33:9e:1f:34:94:70:23:ea:37:d8:
+        10:5b:a7:ba:2c:c0:67:58:e4:d1:53:90:43:a3:d6:ac:ff:f5:
+        3a:8a:95:97:dd:7b:e2:93
+>>> Verifying worker2.pem
+worker2.pem: OK
+
+=== Private keys modulus hash ===
+>>> admin-key.pem
+MD5(stdin)= 153d28cf221c4f323be6fc00401e6b13
+
+>>> ca-key.pem
+MD5(stdin)= 99900b98e2b20564457710ee7c9436a5
+
+>>> control0-key.pem
+MD5(stdin)= 91eaf0ee0e4f07d566b097aefda9138c
+
+>>> control1-key.pem
+MD5(stdin)= 0b3b1c9f23535a967b72207a7a08e642
+
+>>> control2-key.pem
+MD5(stdin)= e3dc459e4d51762fbf3430c44376393f
+
+>>> kube-controller-manager-key.pem
+MD5(stdin)= 4c61b738655285b03549658b3bcb7e4d
+
+>>> kube-proxy-key.pem
+MD5(stdin)= c14b9deeac0396289ecea4cdd803ccad
+
+>>> kubernetes-key.pem
+MD5(stdin)= 95b20a6aad5fe637939fb3845aa30d4d
+
+>>> kube-scheduler-key.pem
+MD5(stdin)= 552acddb9b85b4d689aca3eacbddf896
+
+>>> service-account-key.pem
+MD5(stdin)= 60ddaf3e8d9539ee4c56814af1b6fd4d
+
+>>> worker0-key.pem
+MD5(stdin)= 743e3504f5ed220eba6cb2c300aa267f
+
+>>> worker1-key.pem
+MD5(stdin)= 8aec32075ac8dfbb298b634a8a0bc0b6
+
+>>> worker2-key.pem
+MD5(stdin)= 6b9940196fae4c266fc05c03c466348c
+
+=== Matching certs to keys ===
+>>> Matching admin.pem with admin-key.pem
+Cert MD5: MD5(stdin)= 153d28cf221c4f323be6fc00401e6b13
+Key  MD5: MD5(stdin)= 153d28cf221c4f323be6fc00401e6b13
+Match: YES
+
+>>> Matching ca.pem with ca-key.pem
+Cert MD5: MD5(stdin)= 99900b98e2b20564457710ee7c9436a5
+Key  MD5: MD5(stdin)= 99900b98e2b20564457710ee7c9436a5
+Match: YES
+
+>>> Matching control0.pem with control0-key.pem
+Cert MD5: MD5(stdin)= 91eaf0ee0e4f07d566b097aefda9138c
+Key  MD5: MD5(stdin)= 91eaf0ee0e4f07d566b097aefda9138c
+Match: YES
+
+>>> Matching control1.pem with control1-key.pem
+Cert MD5: MD5(stdin)= 0b3b1c9f23535a967b72207a7a08e642
+Key  MD5: MD5(stdin)= 0b3b1c9f23535a967b72207a7a08e642
+Match: YES
+
+>>> Matching control2.pem with control2-key.pem
+Cert MD5: MD5(stdin)= e3dc459e4d51762fbf3430c44376393f
+Key  MD5: MD5(stdin)= e3dc459e4d51762fbf3430c44376393f
+Match: YES
+
+>>> Matching kube-controller-manager.pem with kube-controller-manager-key.pem
+Cert MD5: MD5(stdin)= 4c61b738655285b03549658b3bcb7e4d
+Key  MD5: MD5(stdin)= 4c61b738655285b03549658b3bcb7e4d
+Match: YES
+
+>>> Matching kube-proxy.pem with kube-proxy-key.pem
+Cert MD5: MD5(stdin)= c14b9deeac0396289ecea4cdd803ccad
+Key  MD5: MD5(stdin)= c14b9deeac0396289ecea4cdd803ccad
+Match: YES
+
+>>> Matching kubernetes.pem with kubernetes-key.pem
+Cert MD5: MD5(stdin)= 95b20a6aad5fe637939fb3845aa30d4d
+Key  MD5: MD5(stdin)= 95b20a6aad5fe637939fb3845aa30d4d
+Match: YES
+
+>>> Matching kube-scheduler.pem with kube-scheduler-key.pem
+Cert MD5: MD5(stdin)= 552acddb9b85b4d689aca3eacbddf896
+Key  MD5: MD5(stdin)= 552acddb9b85b4d689aca3eacbddf896
+Match: YES
+
+>>> Matching service-account.pem with service-account-key.pem
+Cert MD5: MD5(stdin)= 60ddaf3e8d9539ee4c56814af1b6fd4d
+Key  MD5: MD5(stdin)= 60ddaf3e8d9539ee4c56814af1b6fd4d
+Match: YES
+
+>>> Matching worker0.pem with worker0-key.pem
+Cert MD5: MD5(stdin)= 743e3504f5ed220eba6cb2c300aa267f
+Key  MD5: MD5(stdin)= 743e3504f5ed220eba6cb2c300aa267f
+Match: YES
+
+>>> Matching worker1.pem with worker1-key.pem
+Cert MD5: MD5(stdin)= 8aec32075ac8dfbb298b634a8a0bc0b6
+Key  MD5: MD5(stdin)= 8aec32075ac8dfbb298b634a8a0bc0b6
+Match: YES
+
+>>> Matching worker2.pem with worker2-key.pem
+Cert MD5: MD5(stdin)= 6b9940196fae4c266fc05c03c466348c
+Key  MD5: MD5(stdin)= 6b9940196fae4c266fc05c03c466348c
+Match: YES
+
