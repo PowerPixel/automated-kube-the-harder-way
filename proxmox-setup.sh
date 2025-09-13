@@ -14,7 +14,7 @@ cd $IMG_FOLDER
 apt update -y
 apt install libguestfs-tools -y
 
-virt-customize -a $UBUNTU_VERSION-server-cloudimg-amd64.img --run-command "apt-get update && apt-get upgrade -y && ufw allow ssh"
+virt-customize -a $UBUNTU_VERSION-server-cloudimg-amd64.img --run-command "apt-get update && apt-get upgrade -y && apt install arping traceroute -y && ufw disable"
 virt-customize -a $UBUNTU_VERSION-server-cloudimg-amd64.img --install qemu-guest-agent
 
 qm create 9000 --name "ubuntu-template" --memory 1024 --cores 2 --net0 virtio,bridge=vmbr1 --bios ovmf

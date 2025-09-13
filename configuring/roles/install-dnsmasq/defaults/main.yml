@@ -7,4 +7,4 @@ hosts_entries:
   - 10.16.2.1  worker0
   - 10.16.2.2  worker1
   - 10.16.2.3  worker2
-  - 10.16.255.254  kubernetes
+  - 10.16.254.254  kubernetes
