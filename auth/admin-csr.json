@@ -8,7 +8,7 @@
         {
             "C": "FR",
             "L": "Lyon",
-            "O": "Kubernetes",
+            "O": "system:masters",
             "OU": "kubenet",
             "ST": "Rhone"
         }
