@@ -6,7 +6,7 @@ dir=$(dirname "$0")
 kubectl config set-cluster kubenet \
   --certificate-authority="$dir/ca.pem" \
   --embed-certs=true \
-  --server=https://kubernetes:6443
+  --server=https://192.168.1.69:6443
 
 kubectl config set-credentials admin \
   --client-certificate="$dir/admin.pem" \

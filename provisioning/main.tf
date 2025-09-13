@@ -233,10 +233,4 @@ resource "null_resource" "configure_k8s" {
     
     interpreter = ["/bin/bash", "-c"]
   }
-
-  provisioner "local-exec" {
-    command = "ansible-playbook -i ../configuring/inventory.py --user ubuntu --become --become-method=sudo ../configuring/client.yaml"
-    
-    interpreter = ["/bin/bash", "-c"]
-  }
 }
