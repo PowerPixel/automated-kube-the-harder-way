@@ -5,3 +5,4 @@
     - disable-systemd-resolved
     - install-prereqs
     - install-dnsmasq
+    - install-nginx
