@@ -1,0 +1,3 @@
+- Use the Ansible Provider for Terraform to run the ansible playbooks and gather data for each generated node
+- Decrease the size of the cluster global IP Range
+- Use docker images for the kubernetes services instead of binaries
