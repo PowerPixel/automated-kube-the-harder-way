@@ -4,6 +4,7 @@
   gather_facts: true
   roles:
     - install-kube-vip
+    - install-nginx-portforwarding
 
 - name: Scan ssh keys for workers and control
   hosts: gateway

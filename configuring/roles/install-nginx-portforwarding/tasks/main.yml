@@ -1,0 +1,26 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for install-nginx-portforwarding
+- name: Install Nginx
+  ansible.builtin.apt:
+    name:
+      - nginx
+      - libnginx-mod-stream
+    state: present
+
+- name: Add stream configuration folder to nginx folder
+  ansible.builtin.lineinfile:
+    dest: /etc/nginx/nginx.conf
+    insertafter: "include /etc/nginx/modules-enabled/*.conf;"
+    line: "include /etc/nginx/stream.d/*.conf;"
+
+- name: Install configuration for kubernetes port forwarding
+  ansible.builtin.copy:
+    dest: /etc/nginx/stream.d/
+    src: kubeapi-portforward.conf
+
+- name: Enable and reload nginx service
+  ansible.builtin.service:
+    state: reloaded
+    enabled: true
+    name: nginx
