@@ -1,0 +1,15 @@
+---
+- name: Ensure certificate folder exists
+  ansible.builtin.file:
+    path: /usr/local/share/ca-certificates
+    state: directory
+
+- name: Copy certificate
+  ansible.builtin.copy:
+    src: "ca.pem"
+    dest: "/usr/local/share/ca-certificates/kubernetes-ca.crt"
+  register: cert
+
+- name: Update ca trust
+  ansible.builtin.command: update-ca-certificates
+  when: cert is changed

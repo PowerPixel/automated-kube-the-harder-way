@@ -30,3 +30,5 @@ for node in ${control[@]}; do
     cp -rf $authdir/$node-key.pem $dir/roles/install-control-certs/files
     cp -rf $authdir/$node.kubeconfig $dir/roles/install-control-certs/files
 done
+
+cp -rf $authdir/$cafile $dir/roles/install-cluster-ca/files

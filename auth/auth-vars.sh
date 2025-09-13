@@ -4,7 +4,8 @@ control=(control{0,1,2})
 workers=(worker{0,1,2})
 vmnames=( "${control[@]}" "${workers[@]}" )
 
-commoncerts=(ca.pem)
+cafile=ca.pem
+commoncerts=($cafile)
 workercerts=(kube-proxy.kubeconfig)
 controlcerts=(ca-key.pem 
 kubernetes-key.pem kubernetes.pem 

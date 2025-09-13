@@ -3,18 +3,21 @@
   hosts: gateway
   gather_facts: true
   roles:
+    - install-cluster-ca
     - ssh-keyscan-cluster-machines
 
 - name: Configure workers
   hosts: workers
   gather_facts: true
   roles:
+    - install-cluster-ca
     - install-worker-certs
 
 - name: Configure control plane
   hosts: control
   gather_facts: true
   roles:
+    - install-cluster-ca
     - install-control-certs
     - install-etcd
     - install-kube-apiserver
