@@ -4,5 +4,6 @@
   roles:
     - disable-systemd-resolved
     - install-prereqs
+    - install-cluster-ca
     - install-dnsmasq
     - install-nginx
