@@ -21,3 +21,4 @@
     - install-etcd
     - install-kube-apiserver
     - install-kube-controller-manager
+    - install-kube-scheduler
