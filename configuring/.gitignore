@@ -1,3 +1,5 @@
 **/*.pem
 *.tar.gz
 kube-apiserver
+kube-controller-manager
+kube-scheduler
