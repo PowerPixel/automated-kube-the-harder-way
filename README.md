@@ -26,3 +26,11 @@ The VIP is currently managed through `ldirectord` with a round-robin setup and h
 All control nodes have the gateway VIP IP on their loopback device, `10.16.254.254/32` with ARP announce disabled to prevent collision with the `gateway`.
 
 Additionally for ease of use, hostfile entries are added to each machine. Check out the `install-dnsmasq` role for more info.
+
+Services will live on `10.32.0.0/16`, and pods will live on `10.64.0.0/16`, which will be split two ways :
+
+- Control nodes will be assigned subnets `10.64.0-127.0/24`
+- Worker nodes will be assigned subnets `10.64.128-255.0/24`
+
+
+
