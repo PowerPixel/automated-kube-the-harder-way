@@ -22,3 +22,10 @@
     - install-kube-apiserver
     - install-kube-controller-manager
     - install-kube-scheduler
+
+- name: commons
+  hosts: control:workers
+  roles:
+    - install-cri
+  tags:
+    - "cri"

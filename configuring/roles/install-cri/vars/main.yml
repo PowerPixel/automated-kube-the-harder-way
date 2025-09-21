@@ -1,0 +1,5 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for install-cri
+crictl_archive: "crictl-v{{ cri_version }}-linux-{{ arch }}.tar.gz"
+containerd_archive: "containerd-{{ containerd_version }}-linux-{{ arch }}.tar.gz"

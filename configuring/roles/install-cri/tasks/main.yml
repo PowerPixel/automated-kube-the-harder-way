@@ -1,0 +1,77 @@
+---
+- name: Download cri components
+  delegate_to: localhost
+  become: false
+  ansible.builtin.get_url:
+    url: "{{ item }}"
+    dest: "./"
+    mode: "755"
+  with_items:
+    - https://github.com/kubernetes-sigs/cri-tools/releases/download/v{{ cri_version }}/{{ crictl_archive }}
+    - https://github.com/opencontainers/runc/releases/download/v{{ runc_version }}/runc.{{ arch }}
+    - https://github.com/containerd/containerd/releases/download/v{{ containerd_version }}/{{ containerd_archive }}
+
+- name: Create containerd extraction directories
+  ansible.builtin.file:
+    path: "containerd/"
+    state: "directory"
+    mode: "755"
+
+- name: Create containerd configuration directory
+  ansible.builtin.file:
+    path: "/etc/containerd/"
+    state: "directory"
+    mode: "755"
+
+- name: Extract crictl
+  ansible.builtin.unarchive:
+    src: "./{{ crictl_archive }}"
+    dest: "."
+
+- name: Extract containerd
+  ansible.builtin.unarchive:
+    src: "./{{ containerd_archive }}"
+    dest: "./containerd"
+
+- name: Rename runc
+  ansible.builtin.copy:
+    src: "runc.{{ arch }}"
+    dest: "./runc"
+    mode: "755"
+
+- name: Install {{ item }}
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ item }}"
+    dest: "/usr/local/bin/"
+    mode: "755"
+  with_items:
+    - runc
+    - containerd
+
+- name: Install containerd binaries
+  ansible.builtin.copy:
+    remote_src: true
+    src: "./containerd/bin/"
+    dest: "/bin/"
+    mode: "755"
+
+- name: Install containerd config
+  ansible.builtin.copy:
+    src: "config.toml"
+    dest: "/etc/containerd"
+    mode: "755"
+
+- name: Install containerd service
+  ansible.builtin.copy:
+    src: "containerd.service"
+    dest: "/etc/systemd/system/containerd.service"
+    mode: "755"
+
+- name: Activate containerd service
+  become: true
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+    state: started
+    name: containerd
+    enabled: true
