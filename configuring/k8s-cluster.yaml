@@ -23,7 +23,7 @@
     - install-kube-controller-manager
     - install-kube-scheduler
 
-- name: commons
+- name: Configure CRI
   hosts: control:workers
   roles:
     - install-cri
