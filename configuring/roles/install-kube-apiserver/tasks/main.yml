@@ -1,7 +1,5 @@
 ---
 - name: Download kube-apiserver
-  delegate_to: localhost
-  become: false
   ansible.builtin.get_url:
     url: "https://cdn.dl.k8s.io/release/v{{ k8s_version }}/bin/linux/{{ arch }}/kube-apiserver"
     dest: "./kube-apiserver"
@@ -10,6 +8,7 @@
 - name: Copy kube-apiserver to /usr/local/bin
   become: true
   ansible.builtin.copy:
+    remote_src: true
     src: "./kube-apiserver"
     dest: "/usr/local/bin"
     mode: "755"

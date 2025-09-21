@@ -1,13 +1,12 @@
 ---
 - name: Download etcd archive
-  delegate_to: localhost
-  become: false
   ansible.builtin.get_url:
     url: "https://github.com/etcd-io/etcd/releases/download/v{{ etcd_version }}/{{ etcd_archive }}"
     dest: "./{{ etcd_archive }}"
 
 - name: Extract archive contents
   ansible.builtin.unarchive:
+    remote_src: true
     src: "./{{ etcd_archive }}"
     dest: "."
 

@@ -1,7 +1,5 @@
 ---
 - name: Download cri components
-  delegate_to: localhost
-  become: false
   ansible.builtin.get_url:
     url: "{{ item }}"
     dest: "./"
@@ -25,16 +23,19 @@
 
 - name: Extract crictl
   ansible.builtin.unarchive:
+    remote_src: true
     src: "./{{ crictl_archive }}"
     dest: "."
 
 - name: Extract containerd
   ansible.builtin.unarchive:
+    remote_src: true
     src: "./{{ containerd_archive }}"
     dest: "./containerd"
 
 - name: Rename runc
   ansible.builtin.copy:
+    remote_src: true
     src: "runc.{{ arch }}"
     dest: "./runc"
     mode: "755"

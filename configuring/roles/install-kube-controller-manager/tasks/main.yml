@@ -1,7 +1,5 @@
 ---
 - name: Download kube-controller-manager
-  delegate_to: localhost
-  become: false
   ansible.builtin.get_url:
     url: "https://cdn.dl.k8s.io/release/v{{ k8s_version }}/bin/linux/{{ arch }}/kube-controller-manager"
     dest: "./kube-controller-manager"
@@ -10,6 +8,7 @@
 - name: Copy kube-controller-manager to /usr/local/bin
   become: true
   ansible.builtin.copy:
+    remote_src: true
     src: "./kube-controller-manager"
     dest: "/usr/local/bin"
     mode: "755"
