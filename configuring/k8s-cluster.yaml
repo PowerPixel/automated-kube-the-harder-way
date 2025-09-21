@@ -23,9 +23,12 @@
     - install-kube-controller-manager
     - install-kube-scheduler
 
-- name: Configure CRI
+- name: Install worker components
   hosts: control:workers
   roles:
     - install-cri
+    - install-cni
   tags:
-    - "cri"
+    - workers
+    - cri
+    - cni

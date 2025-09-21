@@ -1,0 +1,36 @@
+---
+- name: Download CNI plugins
+  ansible.builtin.get_url:
+    url: "  https://github.com/containernetworking/plugins/releases/download/v{{ cni_plugins_version }}/{{ cni_plugins_archive }}"
+    dest: "./"
+    mode: "755"
+
+
+- name: Create cni bin directory
+  ansible.builtin.file:
+    path: "/opt/cni/bin"
+    state: "directory"
+    mode: "755"
+
+- name: Extract cni plugins
+  ansible.builtin.unarchive:
+    remote_src: true
+    src: "./{{ cni_plugins_archive }}"
+    dest: "/opt/cni/bin/"
+
+- name: Retrieve host vars
+  ansible.builtin.debug:
+    msg: |
+      All available hostvars keys: {{ hostvars[inventory_hostname].keys() | list }}
+
+- name: Install cni bridge config
+  ansible.builtin.template:
+    src: "10-bridge.conf.j2"
+    dest: "/etc/cni/net.d/10-bridge.conf"
+    mode: "444"
+
+- name: Install cni loopback config
+  ansible.builtin.template:
+    src: "99-loopback.conf.j2"
+    dest: "/etc/cni/net.d/99-loopback.conf"
+    mode: "444"

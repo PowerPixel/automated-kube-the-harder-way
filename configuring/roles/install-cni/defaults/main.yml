@@ -1,0 +1,6 @@
+---
+arch: "amd64"
+
+cni_plugins_version: "1.7.1"
+cni_spec_version: "1.0.0"
+cni_plugins_archive: "cni-plugins-linux-{{ arch }}-v{{ cni_plugins_version }}.tgz"
