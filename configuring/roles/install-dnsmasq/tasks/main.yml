@@ -26,3 +26,101 @@
     state: started
     enabled: true
     name: dnsmasq
+
+- name: Ensure IP forwarding is enabled (persistent)
+  sysctl:
+    name: net.ipv4.ip_forward
+    value: '1'
+    state: present
+    reload: true
+
+- name: Install iptables and iptables-persistent package
+  ansible.builtin.apt:
+    name:
+      - iptables
+      - iptables-persistent
+    state: present
+    update_cache: true
+
+- name: Configure NAT masquerading for external interface
+  ansible.builtin.iptables:
+    table: nat
+    chain: POSTROUTING
+    out_interface: "eth0"
+    jump: MASQUERADE
+    comment: "NAT masquerade for internet access"
+
+- name: Configure NAT masquerading for private subnet only
+  ansible.builtin.iptables:
+    table: nat
+    chain: POSTROUTING
+    source: "10.16.0.0/16"
+    out_interface: "eth0"
+    jump: MASQUERADE
+    comment: "NAT masquerade for private subnet"
+
+- name: Allow forwarding from internal to external interface
+  ansible.builtin.iptables:
+    chain: FORWARD
+    in_interface: "eth1"
+    out_interface: "eth0"
+    jump: ACCEPT
+    comment: "Allow forward internal to external"
+
+- name: Allow established and related connections back
+  ansible.builtin.iptables:
+    chain: FORWARD
+    in_interface: "eth0"
+    out_interface: "eth1"
+    ctstate: ESTABLISHED,RELATED
+    jump: ACCEPT
+    comment: "Allow established connections back"
+
+- name: Allow loopback interface
+  ansible.builtin.iptables:
+    chain: INPUT
+    in_interface: lo
+    jump: ACCEPT
+    comment: "Allow loopback"
+
+- name: Allow established and related connections on INPUT
+  ansible.builtin.iptables:
+    chain: INPUT
+    ctstate: ESTABLISHED,RELATED
+    jump: ACCEPT
+    comment: "Allow established INPUT connections"
+
+- name: Allow SSH access from private network
+  ansible.builtin.iptables:
+    chain: INPUT
+    protocol: tcp
+    source: "10.16.0.0/16"
+    destination_port: '22'
+    ctstate: NEW
+    jump: ACCEPT
+    comment: "Allow SSH from private network"
+
+- name: Allow DHCP server (if using ISC DHCP)
+  ansible.builtin.iptables:
+    chain: INPUT
+    protocol: udp
+    destination_port: '67'
+    jump: ACCEPT
+    comment: "Allow DHCP server"
+
+- name: Allow DNS queries (if providing DNS)
+  ansible.builtin.iptables:
+    chain: INPUT
+    protocol: "{{ item }}"
+    destination_port: '53'
+    jump: ACCEPT
+    comment: "Allow DNS queries"
+  loop:
+    - tcp
+    - udp
+
+- name: Save current iptables rules to file
+  community.general.iptables_state:
+    state: saved
+    path: /etc/iptables/rules.v4
+    ip_version: ipv4
